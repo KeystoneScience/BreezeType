@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+
+if [ "${SKIP_VERSION_BUMP:-}" = "1" ]; then
+  exit 0
+fi
+
+BUMP_TYPE=${VERSION_BUMP:-patch}
+
+if command -v bun >/dev/null 2>&1; then
+  bun scripts/bump-version.ts "$BUMP_TYPE" --stage
+else
+  echo "bun not found; skipping version bump" >&2
+fi

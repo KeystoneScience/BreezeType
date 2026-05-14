@@ -1,0 +1,295 @@
+name: "Release"
+
+on:
+  workflow_dispatch:
+    inputs:
+      notes:
+        description: "Optional release notes override"
+        required: false
+        type: string
+      publish:
+        description: "Publish release immediately (otherwise keep draft)"
+        required: true
+        default: false
+        type: boolean
+      build_target:
+        description: "Which platforms to build"
+        required: true
+        default: "macos"
+        type: choice
+        options:
+          - macos
+          - all
+      notarize_macos:
+        description: "Notarize macOS builds with Apple ID credentials"
+        required: true
+        default: false
+        type: boolean
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.get-version.outputs.version }}
+      tag: ${{ steps.get-version.outputs.tag }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get version from tauri.conf.json
+        id: get-version
+        shell: bash
+        run: |
+          VERSION=$(grep -o '"version": "[^"]*"' src-tauri/tauri.conf.json | cut -d'"' -f4)
+          echo "Application version from tauri.conf.json: $VERSION"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=v$VERSION" >> "$GITHUB_OUTPUT"
+
+  validate-release-credentials:
+    runs-on: ubuntu-latest
+    env:
+      APPLE_ID: ${{ secrets.APPLE_ID }}
+      APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
+      APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
+      APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+      KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+      AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+      AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+      AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+      PUBLIC_RELEASES_TOKEN: ${{ secrets.PUBLIC_RELEASES_TOKEN }}
+      TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+      TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+      BUILD_TARGET: ${{ inputs.build_target }}
+      NOTARIZE_MACOS: ${{ inputs.notarize_macos }}
+    steps:
+      - name: Validate required release credentials
+        shell: bash
+        run: |
+          missing=()
+          if [[ "$NOTARIZE_MACOS" == "true" ]]; then
+            [[ -n "$APPLE_ID" ]] || missing+=("APPLE_ID")
+            if [[ -z "$APPLE_ID_PASSWORD" && -z "$APPLE_PASSWORD" ]]; then
+              missing+=("APPLE_ID_PASSWORD or APPLE_PASSWORD")
+            fi
+          fi
+          [[ -n "$APPLE_TEAM_ID" ]] || missing+=("APPLE_TEAM_ID")
+          [[ -n "$APPLE_CERTIFICATE" ]] || missing+=("APPLE_CERTIFICATE")
+          [[ -n "$APPLE_CERTIFICATE_PASSWORD" ]] || missing+=("APPLE_CERTIFICATE_PASSWORD")
+          [[ -n "$KEYCHAIN_PASSWORD" ]] || missing+=("KEYCHAIN_PASSWORD")
+          if [[ "$BUILD_TARGET" == "all" ]]; then
+            [[ -n "$AZURE_CLIENT_ID" ]] || missing+=("AZURE_CLIENT_ID")
+            [[ -n "$AZURE_CLIENT_SECRET" ]] || missing+=("AZURE_CLIENT_SECRET")
+            [[ -n "$AZURE_TENANT_ID" ]] || missing+=("AZURE_TENANT_ID")
+          fi
+          [[ -n "$PUBLIC_RELEASES_TOKEN" ]] || missing+=("PUBLIC_RELEASES_TOKEN")
+          [[ -n "$TAURI_SIGNING_PRIVATE_KEY" ]] || missing+=("TAURI_SIGNING_PRIVATE_KEY")
+          [[ -n "$TAURI_SIGNING_PRIVATE_KEY_PASSWORD" ]] || missing+=("TAURI_SIGNING_PRIVATE_KEY_PASSWORD")
+          if (( ${#missing[@]} > 0 )); then
+            printf 'Missing release credential(s): %s\n' "${missing[*]}" >&2
+            exit 1
+          fi
+
+  publish-tauri:
+    needs:
+      - metadata
+      - validate-release-credentials
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: "macos-26" # for Arm based macs (M1 and above). Uses macOS 26 for Apple Intelligence SDK.
+            args: "--target aarch64-apple-darwin"
+            target: "aarch64-apple-darwin"
+          - platform: "macos-15-intel" # for Intel based macs.
+            args: "--target x86_64-apple-darwin"
+            target: "x86_64-apple-darwin"
+
+    uses: ./.github/workflows/build.yml
+    with:
+      platform: ${{ matrix.platform }}
+      target: ${{ matrix.target }}
+      build-args: ${{ matrix.args }}
+      sign-binaries: true
+      notarize-macos: ${{ inputs.notarize_macos }}
+      asset-prefix: "breeze-release"
+      upload-artifacts: true
+      bundle-models: true
+    secrets: inherit
+
+  publish_tauri_extra:
+    needs:
+      - metadata
+      - validate-release-credentials
+    if: ${{ inputs.build_target == 'all' }}
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: "ubuntu-22.04" # Build .deb on 22.04
+            args: "--bundles deb"
+            target: "x86_64-unknown-linux-gnu"
+          - platform: "ubuntu-24.04" # Build AppImage and RPM on 24.04
+            args: "--bundles appimage,rpm"
+            target: "x86_64-unknown-linux-gnu"
+          - platform: "windows-latest"
+            args: ""
+            target: "x86_64-pc-windows-msvc"
+
+    uses: ./.github/workflows/build.yml
+    with:
+      platform: ${{ matrix.platform }}
+      target: ${{ matrix.target }}
+      build-args: ${{ matrix.args }}
+      sign-binaries: true
+      notarize-macos: ${{ inputs.notarize_macos }}
+      asset-prefix: "breeze-release"
+      upload-artifacts: true
+      bundle-models: true
+    secrets: inherit
+
+  publish-public-release:
+    needs:
+      - metadata
+      - publish-tauri
+      - publish_tauri_extra
+    if: ${{ always() && needs['publish-tauri'].result == 'success' && (inputs.build_target != 'all' || needs.publish_tauri_extra.result == 'success') }}
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.PUBLIC_RELEASES_TOKEN }}
+      PUBLIC_RELEASES_REPO: ${{ vars.PUBLIC_RELEASES_REPO || 'KeystoneScience/breeze-releases' }}
+      VERSION: ${{ needs.metadata.outputs.version }}
+      TAG: ${{ needs.metadata.outputs.tag }}
+      RELEASE_NOTES: ${{ inputs.notes }}
+      PUBLISH_NOW: ${{ inputs.publish }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: tmp/release-assets
+          merge-multiple: true
+
+      - name: Collect updater artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p src-tauri/target/release/bundle/workflow
+          while IFS= read -r -d '' file; do
+            cp "$file" src-tauri/target/release/bundle/workflow/
+          done < <(
+            find tmp/release-assets -type f \
+              \( -name "*.app.tar.gz" -o -name "*.app.tar.gz.sig" \
+                 -o -name "*.AppImage.tar.gz" -o -name "*.AppImage.tar.gz.sig" \
+                 -o -name "*.appimage.tar.gz" -o -name "*.appimage.tar.gz.sig" \
+                 -o -name "*.msi.zip" -o -name "*.msi.zip.sig" \
+                 -o -name "*.exe.zip" -o -name "*.exe.zip.sig" \) -print0
+          )
+          updater_count=$(find src-tauri/target/release/bundle/workflow -type f | wc -l | tr -d ' ')
+          if [[ "$updater_count" == "0" ]]; then
+            echo "No updater artifacts were found in downloaded assets."
+            exit 1
+          fi
+          echo "Collected $updater_count updater files."
+
+      - name: Generate latest.json
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -n "${RELEASE_NOTES}" ]]; then
+            bun scripts/generate-latest-json.ts \
+              --repo "${PUBLIC_RELEASES_REPO}" \
+              --notes "${RELEASE_NOTES}" \
+              --output src-tauri/target/release/bundle/latest.json
+          else
+            bun scripts/generate-latest-json.ts \
+              --repo "${PUBLIC_RELEASES_REPO}" \
+              --output src-tauri/target/release/bundle/latest.json
+          fi
+
+      - name: Normalize Mac manual download asset
+        if: inputs.build_target == 'macos' || inputs.build_target == 'all'
+        shell: bash
+        run: |
+          set -euo pipefail
+          mapfile -t dmg_files < <(find tmp/release-assets -type f -name "*.dmg" | sort)
+          if (( ${#dmg_files[@]} == 0 )); then
+            echo "No DMG artifacts found to normalize."
+            exit 1
+          fi
+
+          best_dmg=""
+          for file in "${dmg_files[@]}"; do
+            lower="$(basename "$file" | tr '[:upper:]' '[:lower:]')"
+            if [[ "$lower" == "breezetype.dmg" ]]; then
+              best_dmg="$file"
+              break
+            fi
+            if [[ "$lower" == *"universal"* ]]; then
+              best_dmg="$file"
+            elif [[ -z "$best_dmg" && ( "$lower" == *"aarch64"* || "$lower" == *"arm64"* ) ]]; then
+              best_dmg="$file"
+            elif [[ -z "$best_dmg" ]]; then
+              best_dmg="$file"
+            fi
+          done
+
+          if [[ "$(basename "$best_dmg")" != "BreezeType.dmg" ]]; then
+            cp "$best_dmg" tmp/release-assets/BreezeType.dmg
+          fi
+          echo "Stable Mac download asset: BreezeType.dmg from $(basename "$best_dmg")"
+
+      - name: Create or update draft release
+        shell: bash
+        run: |
+          set -euo pipefail
+          if gh release view "${TAG}" -R "${PUBLIC_RELEASES_REPO}" >/dev/null 2>&1; then
+            if [[ -n "${RELEASE_NOTES}" ]]; then
+              gh release edit "${TAG}" -R "${PUBLIC_RELEASES_REPO}" --title "${TAG}" --notes "${RELEASE_NOTES}" --draft
+            else
+              gh release edit "${TAG}" -R "${PUBLIC_RELEASES_REPO}" --title "${TAG}" --draft
+            fi
+          else
+            if [[ -n "${RELEASE_NOTES}" ]]; then
+              gh release create "${TAG}" -R "${PUBLIC_RELEASES_REPO}" --title "${TAG}" --notes "${RELEASE_NOTES}" --draft
+            else
+              gh release create "${TAG}" -R "${PUBLIC_RELEASES_REPO}" --title "${TAG}" --generate-notes --draft
+            fi
+          fi
+
+      - name: Upload release assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          files=()
+          while IFS= read -r -d '' file; do
+            files+=("$file")
+          done < <(
+            find tmp/release-assets -type f \
+              \( -name "*.app.tar.gz" -o -name "*.app.tar.gz.sig" \
+                 -o -name "*.AppImage.tar.gz" -o -name "*.AppImage.tar.gz.sig" \
+                 -o -name "*.appimage.tar.gz" -o -name "*.appimage.tar.gz.sig" \
+                 -o -name "*.msi.zip" -o -name "*.msi.zip.sig" \
+                 -o -name "*.exe.zip" -o -name "*.exe.zip.sig" \
+                 -o -name "*.dmg" -o -name "*.AppImage" -o -name "*.deb" \
+                 -o -name "*.rpm" -o -name "*.msi" -o -name "*.exe" \) -print0
+          )
+          files+=("src-tauri/target/release/bundle/latest.json")
+          gh release upload "${TAG}" -R "${PUBLIC_RELEASES_REPO}" --clobber "${files[@]}"
+
+      - name: Publish release
+        if: env.PUBLISH_NOW == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          gh release edit "${TAG}" -R "${PUBLIC_RELEASES_REPO}" --draft=false

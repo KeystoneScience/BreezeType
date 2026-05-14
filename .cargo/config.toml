@@ -1,0 +1,5 @@
+[build]
+
+[env]
+# Keep packaged app builds from linking against local Homebrew ONNX Runtime.
+LIBONNXRUNTIME_NO_PKG_CONFIG = { value = "1", force = true }

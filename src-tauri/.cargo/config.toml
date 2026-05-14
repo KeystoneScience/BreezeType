@@ -1,0 +1,6 @@
+[env]
+# Force Xcode toolchain so whisper-rs-sys can find libc++ headers on macOS.
+DEVELOPER_DIR = "/Applications/Xcode.app/Contents/Developer"
+SDKROOT = "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk"
+# Force ort/onnxruntime to use its vendored static binary instead of Homebrew.
+LIBONNXRUNTIME_NO_PKG_CONFIG = { value = "1", force = true }

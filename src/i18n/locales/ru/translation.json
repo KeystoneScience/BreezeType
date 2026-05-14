@@ -1,0 +1,745 @@
+{
+  "tray": {
+    "settings": "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438...",
+    "checkUpdates": "\u041f\u0440\u043e\u0432\u0435\u0440\u0438\u0442\u044c \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f...",
+    "startMeetingRecording": "\u041d\u0430\u0447\u0430\u0442\u044c \u0437\u0430\u043f\u0438\u0441\u044c \u0432\u0441\u0442\u0440\u0435\u0447\u0438",
+    "stopMeetingRecording": "\u041e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0437\u0430\u043f\u0438\u0441\u044c \u0432\u0441\u0442\u0440\u0435\u0447\u0438",
+    "createTask": "Create task",
+    "quit": "\u0412\u044b\u0445\u043e\u0434",
+    "cancel": "\u041e\u0442\u043c\u0435\u043d\u0430"
+  },
+  "sidebar": {
+    "general": "\u041e\u0431\u0449\u0438\u0435",
+    "advanced": "\u041f\u0440\u043e\u0434\u0432\u0438\u043d\u0443\u0442\u044b\u0435",
+    "postProcessing": "\u041f\u043e\u0441\u0442\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430",
+    "history": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f",
+    "debug": "\u041e\u0442\u043b\u0430\u0434\u043a\u0430",
+    "about": "\u041e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0435"
+  },
+  "onboarding": {
+    "subtitle": "BreezeType is getting ready.",
+    "recommended": "\u0420\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f",
+    "download": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c",
+    "downloading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430...",
+    "modelCard": {
+      "accuracy": "\u0442\u043e\u0447\u043d\u043e\u0441\u0442\u044c",
+      "speed": "\u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c"
+    },
+    "models": {
+      "small": {
+        "name": "BreezeType setup",
+        "description": "\u0411\u044b\u0441\u0442\u0440\u043e \u0438 \u0434\u043e\u0441\u0442\u0430\u0442\u043e\u0447\u043d\u043e \u0442\u043e\u0447\u043d\u043e."
+      },
+      "medium": {
+        "name": "BreezeType setup",
+        "description": "\u0425\u043e\u0440\u043e\u0448\u0430\u044f \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u044c, \u0441\u0440\u0435\u0434\u043d\u044f\u044f \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c."
+      },
+      "turbo": {
+        "name": "BreezeType setup",
+        "description": "\u0421\u0431\u0430\u043b\u0430\u043d\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u0430\u044f \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u044c \u0438 \u0441\u043a\u043e\u0440\u043e\u0441\u0442\u044c."
+      },
+      "large": {
+        "name": "BreezeType setup",
+        "description": "\u0425\u043e\u0440\u043e\u0448\u0430\u044f \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u044c, \u043d\u043e \u043c\u0435\u0434\u043b\u0435\u043d\u043d\u0430\u044f."
+      },
+      "parakeet-tdt-0.6b-v3": {
+        "name": "BreezeType setup",
+        "description": "\u0411\u044b\u0441\u0442\u0440\u043e \u0438 \u0442\u043e\u0447\u043d\u043e"
+      }
+    },
+    "errors": {
+      "loadModels": "BreezeType couldn't finish getting ready. Please try again.",
+      "downloadModel": "BreezeType couldn't finish setup. Please check your connection and try again."
+    }
+  },
+  "modelSelector": {
+    "welcome": "\u0414\u043e\u0431\u0440\u043e \u043f\u043e\u0436\u0430\u043b\u043e\u0432\u0430\u0442\u044c \u0432 BreezeType!",
+    "downloadPrompt": "BreezeType needs a quick one-time setup before dictation is ready.",
+    "availableModels": "Ready",
+    "downloadModels": "Set Up BreezeType",
+    "chooseModel": "Set Up BreezeType",
+    "active": "\u0410\u043a\u0442\u0438\u0432\u043d\u044b\u0439",
+    "download": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c",
+    "downloadSize": "Required download",
+    "noModelsAvailable": "BreezeType setup is not available right now.",
+    "readyOptionTitle": "Ready",
+    "readyOptionDescription": "BreezeType is ready for local dictation.",
+    "setupOptionTitle": "BreezeType setup",
+    "setupOptionDescription": "Required for fast local dictation.",
+    "deleteError": "BreezeType could not remove that download. Please try again.",
+    "extracting": "Finishing setup...",
+    "extractingMultiple": "Finishing setup...",
+    "extractingGeneric": "Finishing setup...",
+    "downloading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430 {{percentage}} %",
+    "downloadingMultiple": "Downloading...",
+    "modelReady": "Ready",
+    "loading": "Getting ready...",
+    "loadingGeneric": "Getting ready...",
+    "modelError": "BreezeType needs attention. Please try again.",
+    "modelUnloaded": "Ready",
+    "noModelDownloadRequired": "Setup required",
+    "deleteModel": "Remove offline data",
+    "statusReady": "\u0413\u043e\u0442\u043e\u0432\u043e",
+    "statusLoading": "Getting ready",
+    "statusIssue": "Needs attention"
+  },
+  "settings": {
+    "general": {
+      "title": "\u041e\u0431\u0449\u0438\u0435",
+      "shortcut": {
+        "title": "\u042f\u0440\u043b\u044b\u043a\u0438 BreezeType",
+        "description": "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u0442\u0435 \u0441\u043e\u0447\u0435\u0442\u0430\u043d\u0438\u044f \u043a\u043b\u0430\u0432\u0438\u0448 \u0434\u043b\u044f \u0437\u0430\u043f\u0443\u0441\u043a\u0430 \u0437\u0430\u043f\u0438\u0441\u0438 \u0440\u0435\u0447\u0438 \u0432 \u0442\u0435\u043a\u0441\u0442",
+        "loading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u044f\u0440\u043b\u044b\u043a\u043e\u0432...",
+        "none": "\u042f\u0440\u043b\u044b\u043a\u0438 \u043d\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0435\u043d\u044b",
+        "notFound": "\u042f\u0440\u043b\u044b\u043a \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d",
+        "pressKeys": "\u041d\u0430\u0436\u0438\u043c\u0430\u0439\u0442\u0435 \u043a\u043b\u0430\u0432\u0438\u0448\u0438...",
+        "bindings": {
+          "transcribe": {
+            "name": "\u0420\u0430\u0441\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u0442\u044c",
+            "description": "\u041f\u0440\u0435\u043e\u0431\u0440\u0430\u0437\u0443\u0435\u0442 \u0432\u0430\u0448\u0443 \u0440\u0435\u0447\u044c \u0432 \u0442\u0435\u043a\u0441\u0442."
+          },
+          "cancel": {
+            "name": "\u041e\u0442\u043c\u0435\u043d\u0430",
+            "description": "\u041e\u0442\u043c\u0435\u043d\u044f\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0443\u044e \u0437\u0430\u043f\u0438\u0441\u044c."
+          },
+          "clipboard_history": {
+            "name": "Clipboard history",
+            "description": "Opens the clipboard history picker."
+          }
+        },
+        "errors": {
+          "restore": "\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u044f\u0440\u043b\u044b\u043a",
+          "set": "\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c \u044f\u0440\u043b\u044b\u043a: {{error}}",
+          "reset": "\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u0441\u0431\u0440\u043e\u0441\u0438\u0442\u044c \u044f\u0440\u043b\u044b\u043a \u0434\u043e \u0438\u0441\u0445\u043e\u0434\u043d\u043e\u0433\u043e \u0437\u043d\u0430\u0447\u0435\u043d\u0438\u044f"
+        }
+      },
+      "language": {
+        "title": "\u042f\u0437\u044b\u043a",
+        "description": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u044f\u0437\u044b\u043a \u0434\u043b\u044f \u0440\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u043d\u0438\u044f \u0440\u0435\u0447\u0438. \u00ab\u0410\u0432\u0442\u043e\u00bb \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0438\u0442 \u044f\u0437\u044b\u043a, \u0430 \u0432\u044b\u0431\u043e\u0440 \u043a\u043e\u043d\u043a\u0440\u0435\u0442\u043d\u043e\u0433\u043e \u044f\u0437\u044b\u043a\u0430 \u043c\u043e\u0436\u0435\u0442 \u043f\u043e\u0432\u044b\u0441\u0438\u0442\u044c \u0442\u043e\u0447\u043d\u043e\u0441\u0442\u044c \u043e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u0438\u044f \u044d\u0442\u043e\u0433\u043e \u044f\u0437\u044b\u043a\u0430.",
+        "descriptionUnsupported": "BreezeType automatically detects the language. No manual selection is needed.",
+        "searchPlaceholder": "\u041f\u043e\u0438\u0441\u043a \u044f\u0437\u044b\u043a\u043e\u0432...",
+        "noResults": "\u042f\u0437\u044b\u043a\u0438 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u044b",
+        "auto": "\u0410\u0432\u0442\u043e"
+      },
+      "pushToTalk": {
+        "label": "\u041d\u0430\u0436\u043c\u0438 \u0438 \u0433\u043e\u0432\u043e\u0440\u0438",
+        "description": "\u0423\u0434\u0435\u0440\u0436\u0438\u0432\u0430\u0439\u0442\u0435, \u0447\u0442\u043e\u0431\u044b \u0437\u0430\u043f\u0438\u0441\u0430\u0442\u044c, \u043e\u0442\u043f\u0443\u0441\u0442\u0438\u0442\u0435, \u0447\u0442\u043e\u0431\u044b \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u044c"
+      },
+      "theme": {
+        "title": "Theme",
+        "description": "Choose light or dark mode, or follow the system setting.",
+        "options": {
+          "system": "System (Default)",
+          "light": "Light",
+          "dark": "Dark"
+        }
+      }
+    },
+    "sound": {
+      "title": "\u0417\u0432\u0443\u043a",
+      "microphone": {
+        "title": "\u041c\u0438\u043a\u0440\u043e\u0444\u043e\u043d",
+        "description": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0435\u043c\u043e\u0435 \u043c\u0438\u043a\u0440\u043e\u0444\u043e\u043d\u043d\u043e\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e",
+        "placeholder": "\u0412\u044b\u0431\u0440\u0430\u0442\u044c \u043c\u0438\u043a\u0440\u043e\u0444\u043e\u043d...",
+        "loading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430..."
+      },
+      "audioFeedback": {
+        "label": "\u0410\u0443\u0434\u0438\u043e \u043e\u0431\u0440\u0430\u0442\u043d\u0430\u044f \u0441\u0432\u044f\u0437\u044c",
+        "description": "\u0412\u043e\u0441\u043f\u0440\u043e\u0438\u0437\u0432\u0435\u0434\u0435\u043d\u0438\u0435 \u0437\u0432\u0443\u043a\u0430 \u043f\u0440\u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0435 \u0438 \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0435 \u0437\u0430\u043f\u0438\u0441\u0438"
+      },
+      "outputDevice": {
+        "title": "\u0423\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e \u0432\u044b\u0432\u043e\u0434\u0430",
+        "description": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u0440\u0435\u0434\u043f\u043e\u0447\u0438\u0442\u0430\u0435\u043c\u043e\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e \u0432\u044b\u0432\u043e\u0434\u0430 \u0437\u0432\u0443\u043a\u0430 \u0434\u043b\u044f \u0437\u0432\u0443\u043a\u043e\u0432 \u043e\u0431\u0440\u0430\u0442\u043d\u043e\u0439 \u0441\u0432\u044f\u0437\u0438",
+        "placeholder": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u043e \u0432\u044b\u0432\u043e\u0434\u0430...",
+        "loading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430..."
+      },
+      "volume": {
+        "title": "\u041e\u0431\u044a\u0435\u043c",
+        "description": "\u041e\u0442\u0440\u0435\u0433\u0443\u043b\u0438\u0440\u0443\u0439\u0442\u0435 \u0433\u0440\u043e\u043c\u043a\u043e\u0441\u0442\u044c \u0437\u0432\u0443\u043a\u043e\u0432 \u0437\u0432\u0443\u043a\u043e\u0432\u043e\u0439 \u043e\u0431\u0440\u0430\u0442\u043d\u043e\u0439 \u0441\u0432\u044f\u0437\u0438"
+      }
+    },
+    "advanced": {
+      "title": "\u041f\u0440\u043e\u0434\u0432\u0438\u043d\u0443\u0442\u044b\u0435",
+      "startHidden": {
+        "label": "\u0417\u0430\u043f\u0443\u0441\u043a\u0430\u0442\u044c \u0441\u043a\u0440\u044b\u0442\u043e",
+        "description": "\u0417\u0430\u043f\u0443\u0441\u043a\u0430\u0442\u044c \u0432 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0439 \u0442\u0440\u0435\u0439, \u043d\u0435 \u043e\u0442\u043a\u0440\u044b\u0432\u0430\u044f \u043e\u043a\u043d\u043e."
+      },
+      "autostart": {
+        "label": "\u0417\u0430\u043f\u0443\u0441\u043a \u043f\u0440\u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0435",
+        "description": "\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0437\u0430\u043f\u0443\u0441\u043a\u0430\u0442\u044c BreezeType \u043f\u0440\u0438 \u0432\u0445\u043e\u0434\u0435 \u0432 \u0441\u0438\u0441\u0442\u0435\u043c\u0443."
+      },
+      "overlay": {
+        "title": "\u041f\u043e\u0437\u0438\u0446\u0438\u044f \u043d\u0430\u043b\u043e\u0436\u0435\u043d\u0438\u044f",
+        "description": "\u041e\u0442\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435 \u043d\u0430\u043b\u043e\u0436\u0435\u043d\u0438\u044f \u0432\u0438\u0437\u0443\u0430\u043b\u044c\u043d\u043e\u0439 \u043e\u0431\u0440\u0430\u0442\u043d\u043e\u0439 \u0441\u0432\u044f\u0437\u0438 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u043f\u0438\u0441\u0438 \u0438 \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438. \u0412 Linux \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0443\u0435\u0442\u0441\u044f \u0432\u044b\u0431\u0440\u0430\u0442\u044c \u00ab\u041d\u0435\u0442\u00bb.",
+        "options": {
+          "none": "\u041d\u0435\u0442",
+          "bottom": "\u0421\u043d\u0438\u0437\u0443",
+          "top": "\u0421\u0432\u0435\u0440\u0445\u0443"
+        }
+      },
+      "meetingDetection": {
+        "label": "Meeting detection",
+        "description": "Show a small prompt when a meeting app or tab becomes active."
+      },
+      "pasteMethod": {
+        "title": "\u041c\u0435\u0442\u043e\u0434 \u0432\u0441\u0442\u0430\u0432\u043a\u0438",
+        "description": "\u0412\u044b\u0431\u0440\u0430\u0442\u044c \u0441\u043f\u043e\u0441\u043e\u0431 \u0432\u0441\u0442\u0430\u0432\u043a\u0438 \u0442\u0435\u043a\u0441\u0442\u0430. \u041f\u0440\u044f\u043c\u043e\u0439: \u0438\u043c\u0438\u0442\u0438\u0440\u0443\u0435\u0442 \u043d\u0430\u0431\u043e\u0440 \u0442\u0435\u043a\u0441\u0442\u0430 \u0447\u0435\u0440\u0435\u0437 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0439 \u0432\u0432\u043e\u0434. \u041d\u0435\u0442: \u043f\u0440\u043e\u043f\u0443\u0441\u043a \u0432\u0441\u0442\u0430\u0432\u043a\u0438, \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435 \u0442\u043e\u043b\u044c\u043a\u043e \u0438\u0441\u0442\u043e\u0440\u0438\u0438/\u0431\u0443\u0444\u0435\u0440\u0430 \u043e\u0431\u043c\u0435\u043d\u0430.",
+        "options": {
+          "clipboard": "\u0411\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430 ({{modifier}}+V)",
+          "clipboardCtrlShiftV": "\u0411\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430 (Ctrl+Shift+V)",
+          "clipboardShiftInsert": "\u0411\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430 (Shift+Insert)",
+          "direct": "\u041f\u0440\u044f\u043c\u043e\u0439",
+          "none": "\u041d\u0435\u0442"
+        }
+      },
+      "clipboardHandling": {
+        "title": "\u041e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0431\u0443\u0444\u0435\u0440\u0430 \u043e\u0431\u043c\u0435\u043d\u0430",
+        "description": "\u0424\u0443\u043d\u043a\u0446\u0438\u044f \u00ab\u041d\u0435 \u0438\u0437\u043c\u0435\u043d\u044f\u0442\u044c \u0431\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430\u00bb \u0441\u043e\u0445\u0440\u0430\u043d\u044f\u0435\u0442 \u0442\u0435\u043a\u0443\u0449\u0435\u0435 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u043c\u043e\u0435 \u0431\u0443\u0444\u0435\u0440\u0430 \u043e\u0431\u043c\u0435\u043d\u0430 \u043f\u043e\u0441\u043b\u0435 \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438. \u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430 \u043e\u0441\u0442\u0430\u0432\u043b\u044f\u0435\u0442 \u0440\u0435\u0437\u0443\u043b\u044c\u0442\u0430\u0442 \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438 \u0432 \u0431\u0443\u0444\u0435\u0440\u0435 \u043e\u0431\u043c\u0435\u043d\u0430 \u043f\u043e\u0441\u043b\u0435 \u0432\u0441\u0442\u0430\u0432\u043a\u0438.",
+        "options": {
+          "dontModify": "\u041d\u0435 \u0438\u0437\u043c\u0435\u043d\u044f\u0442\u044c \u0431\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430",
+          "copyToClipboard": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430"
+        }
+      },
+      "translateToEnglish": {
+        "label": "\u041f\u0435\u0440\u0435\u0432\u0435\u0441\u0442\u0438 \u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439",
+        "description": "\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0438\u0442\u044c \u0440\u0435\u0447\u044c \u0441 \u0434\u0440\u0443\u0433\u0438\u0445 \u044f\u0437\u044b\u043a\u043e\u0432 \u043d\u0430 \u0430\u043d\u0433\u043b\u0438\u0439\u0441\u043a\u0438\u0439 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438.",
+        "descriptionUnsupported": "Translation is not available with the current speech setup."
+      },
+      "modelUnload": {
+        "title": "Release Speech Resources",
+        "description": "Automatically free local speech resources after BreezeType has been idle for the specified time.",
+        "options": {
+          "never": "\u041d\u0438\u043a\u043e\u0433\u0434\u0430",
+          "immediately": "\u041d\u0435\u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e",
+          "min2": "\u0427\u0435\u0440\u0435\u0437 2 \u043c\u0438\u043d\u0443\u0442\u044b",
+          "min5": "\u0427\u0435\u0440\u0435\u0437 5 \u043c\u0438\u043d\u0443\u0442",
+          "min10": "\u0427\u0435\u0440\u0435\u0437 10 \u043c\u0438\u043d\u0443\u0442",
+          "min15": "\u0427\u0435\u0440\u0435\u0437 15 \u043c\u0438\u043d\u0443\u0442",
+          "hour1": "\u0427\u0435\u0440\u0435\u0437 1 \u0447\u0430\u0441",
+          "sec5": "\u0427\u0435\u0440\u0435\u0437 5 \u0441\u0435\u043a\u0443\u043d\u0434 (\u043e\u0442\u043b\u0430\u0434\u043a\u0430)"
+        }
+      },
+      "customWords": {
+        "title": "\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0441\u043b\u043e\u0432\u0430",
+        "description": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0441\u043b\u043e\u0432\u0430, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0447\u0430\u0441\u0442\u043e \u043d\u0435\u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e \u0441\u043b\u044b\u0448\u0430\u0442\u0441\u044f \u0438\u043b\u0438 \u043f\u0438\u0448\u0443\u0442\u0441\u044f \u0441 \u043e\u0448\u0438\u0431\u043a\u0430\u043c\u0438 \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438. \u0421\u0438\u0441\u0442\u0435\u043c\u0430 \u0430\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0438\u0441\u043f\u0440\u0430\u0432\u0438\u0442 \u043f\u043e\u0445\u043e\u0436\u0438\u0435 \u043f\u043e \u0437\u0432\u0443\u0447\u0430\u043d\u0438\u044e \u0441\u043b\u043e\u0432\u0430, \u0447\u0442\u043e\u0431\u044b \u043e\u043d\u0438 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u043e\u0432\u0430\u043b\u0438 \u0432\u0430\u0448\u0435\u043c\u0443 \u0441\u043f\u0438\u0441\u043a\u0443.",
+        "placeholder": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u0441\u043b\u043e\u0432\u043e",
+        "add": "\u0414\u043e\u0431\u0430\u0432\u043b\u044f\u0442\u044c",
+        "remove": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c {{word}}"
+      }
+    },
+    "postProcessing": {
+      "title": "\u041f\u043e\u0441\u0442\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430",
+      "disabledNotice": "\u041f\u043e\u0441\u0442\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0432 \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u0435 \u0432\u0440\u0435\u043c\u044f \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0430. \u0412\u043a\u043b\u044e\u0447\u0438\u0442\u0435 \u0435\u0433\u043e \u0432 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u0445 \u043e\u0442\u043b\u0430\u0434\u043a\u0438 \u0434\u043b\u044f \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438.",
+      "api": {
+        "title": "Cleanup connection",
+        "provider": {
+          "title": "\u041f\u043e\u0441\u0442\u0430\u0432\u0449\u0438\u043a",
+          "description": "Choose how BreezeType should run transcript cleanup."
+        },
+        "appleIntelligence": {
+          "title": "Apple \u0418\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442",
+          "description": "\u041f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 \u043d\u0430 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0435. \u041d\u0438\u043a\u0430\u043a\u043e\u0439 \u043a\u043b\u044e\u0447 API \u0438\u043b\u0438 \u0434\u043e\u0441\u0442\u0443\u043f \u043a \u0441\u0435\u0442\u0438 \u043d\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f.",
+          "requirements": "\u0422\u0440\u0435\u0431\u0443\u0435\u0442\u0441\u044f Apple Silicon Mac \u043f\u043e\u0434 \u0443\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u0435\u043c macOS Tahoe (26.0) \u0438\u043b\u0438 \u0431\u043e\u043b\u0435\u0435 \u043f\u043e\u0437\u0434\u043d\u0435\u0439 \u0432\u0435\u0440\u0441\u0438\u0438. Apple Intelligence \u0434\u043e\u043b\u0436\u0435\u043d \u0431\u044b\u0442\u044c \u0432\u043a\u043b\u044e\u0447\u0435\u043d \u0432 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0430\u0445 \u0441\u0438\u0441\u0442\u0435\u043c\u044b."
+        },
+        "baseUrl": {
+          "title": "Custom connection",
+          "description": "Connection address for custom cleanup setups.",
+          "placeholder": "Connection address"
+        },
+        "apiKey": {
+          "title": "Connection key",
+          "description": "Private key for the selected cleanup connection.",
+          "placeholder": "Paste key"
+        },
+        "model": {
+          "title": "Cleanup option",
+          "descriptionApple": "\u0423\u043a\u0430\u0436\u0438\u0442\u0435 \u0434\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0447\u0438\u0441\u043b\u043e\u0432\u043e\u0439 \u043b\u0438\u043c\u0438\u0442 \u0442\u043e\u043a\u0435\u043d\u043e\u0432 \u0438\u043b\u0438 \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u0435 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u043f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e, \u0443\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u043d\u044b\u0435 \u043d\u0430 \u0443\u0441\u0442\u0440\u043e\u0439\u0441\u0442\u0432\u0435.",
+          "descriptionCustom": "Provide the cleanup option expected by your custom endpoint.",
+          "descriptionDefault": "Choose a cleanup option exposed by the selected connection.",
+          "placeholderApple": "Apple \u0418\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442",
+          "placeholderWithOptions": "Search or select an option",
+          "placeholderNoOptions": "Type an option name",
+          "refreshModels": "Refresh options"
+        }
+      },
+      "prompts": {
+        "title": "\u0411\u044b\u0441\u0442\u0440\u044b\u0439",
+        "selectedPrompt": {
+          "title": "\u0412\u044b\u0431\u0440\u0430\u043d\u043d\u0430\u044f \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u043a\u0430",
+          "description": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0448\u0430\u0431\u043b\u043e\u043d \u0434\u043b\u044f \u0443\u0442\u043e\u0447\u043d\u0435\u043d\u0438\u044f \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438 \u0438\u043b\u0438 \u0441\u043e\u0437\u0434\u0430\u0439\u0442\u0435 \u043d\u043e\u0432\u044b\u0439. \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 ${output} \u0432\u043d\u0443\u0442\u0440\u0438 \u0442\u0435\u043a\u0441\u0442\u0430 \u043f\u0440\u0438\u0433\u043b\u0430\u0448\u0435\u043d\u0438\u044f \u0434\u043b\u044f \u0441\u0441\u044b\u043b\u043a\u0438 \u043d\u0430 \u0437\u0430\u043f\u0438\u0441\u0430\u043d\u043d\u0443\u044e \u0441\u0442\u0435\u043d\u043e\u0433\u0440\u0430\u043c\u043c\u0443."
+        },
+        "noPrompts": "\u041d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u0445 \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u043e\u043a",
+        "selectPrompt": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u043a\u0443",
+        "createNew": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043d\u043e\u0432\u0443\u044e \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u043a\u0443",
+        "promptLabel": "\u041f\u043e\u0434\u0441\u043a\u0430\u0436\u0438\u0442\u0435 \u044d\u0442\u0438\u043a\u0435\u0442\u043a\u0443",
+        "promptLabelPlaceholder": "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u043a\u0438",
+        "promptInstructions": "\u041e\u043f\u0435\u0440\u0430\u0442\u0438\u0432\u043d\u0430\u044f \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u044f",
+        "promptInstructionsPlaceholder": "\u041d\u0430\u043f\u0438\u0448\u0438\u0442\u0435 \u0438\u043d\u0441\u0442\u0440\u0443\u043a\u0446\u0438\u0438 \u0434\u043b\u044f \u0437\u0430\u043f\u0443\u0441\u043a\u0430 \u043f\u043e\u0441\u043b\u0435 \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438. \u041f\u0440\u0438\u043c\u0435\u0440. \u0423\u043b\u0443\u0447\u0448\u0438\u0442\u0435 \u0433\u0440\u0430\u043c\u043c\u0430\u0442\u0438\u043a\u0443 \u0438 \u044f\u0441\u043d\u043e\u0441\u0442\u044c \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0435\u0433\u043e \u0442\u0435\u043a\u0441\u0442\u0430: ${output}",
+        "promptTip": "\u0421\u043e\u0432\u0435\u0442. \u0418\u0441\u043f\u043e\u043b\u044c\u0437\u0443\u0439\u0442\u0435 <code>${output}</code>, \u0447\u0442\u043e\u0431\u044b \u0432\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u0440\u0430\u0441\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0442\u0435\u043a\u0441\u0442 \u0432 \u043f\u0440\u0438\u0433\u043b\u0430\u0448\u0435\u043d\u0438\u0435.",
+        "updatePrompt": "\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c \u0437\u0430\u043f\u0440\u043e\u0441",
+        "deletePrompt": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u043a\u0443",
+        "createPrompt": "\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043f\u043e\u0434\u0441\u043a\u0430\u0437\u043a\u0443",
+        "cancel": "\u041e\u0442\u043c\u0435\u043d\u0430",
+        "selectToEdit": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u043f\u0440\u0438\u0433\u043b\u0430\u0448\u0435\u043d\u0438\u0435 \u0432\u044b\u0448\u0435, \u0447\u0442\u043e\u0431\u044b \u043f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0438 \u0438\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u0435\u0433\u043e \u0441\u0432\u0435\u0434\u0435\u043d\u0438\u044f.",
+        "createFirst": "\u041d\u0430\u0436\u043c\u0438\u0442\u0435 \u00ab\u0421\u043e\u0437\u0434\u0430\u0442\u044c \u043d\u043e\u0432\u043e\u0435 \u043f\u0440\u0438\u0433\u043b\u0430\u0448\u0435\u043d\u0438\u0435\u00bb \u0432\u044b\u0448\u0435, \u0447\u0442\u043e\u0431\u044b \u0441\u043e\u0437\u0434\u0430\u0442\u044c \u043f\u0435\u0440\u0432\u043e\u0435 \u043f\u0440\u0438\u0433\u043b\u0430\u0448\u0435\u043d\u0438\u0435 \u0434\u043b\u044f \u043f\u043e\u0441\u0442\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0438."
+      }
+    },
+    "history": {
+      "title": "\u0418\u0441\u0442\u043e\u0440\u0438\u044f",
+      "openFolder": "\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043f\u0430\u043f\u043a\u0443 \u0441 \u0437\u0430\u043f\u0438\u0441\u044f\u043c\u0438",
+      "loading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430 \u0438\u0441\u0442\u043e\u0440\u0438\u0438...",
+      "empty": "\u0422\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0439 \u043f\u043e\u043a\u0430 \u043d\u0435\u0442. \u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u0437\u0430\u043f\u0438\u0441\u044c, \u0447\u0442\u043e\u0431\u044b \u0441\u043e\u0437\u0434\u0430\u0442\u044c \u0441\u0432\u043e\u044e \u0438\u0441\u0442\u043e\u0440\u0438\u044e!",
+      "copyToClipboard": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u044e \u0432 \u0431\u0443\u0444\u0435\u0440 \u043e\u0431\u043c\u0435\u043d\u0430",
+      "save": "\u0421\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u044e",
+      "unsave": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u0438\u0437 \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u043d\u044b\u0445",
+      "delete": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c \u0437\u0430\u043f\u0438\u0441\u044c",
+      "deleteError": "\u041d\u0435 \u0443\u0434\u0430\u043b\u043e\u0441\u044c \u0443\u0434\u0430\u043b\u0438\u0442\u044c \u0437\u0430\u043f\u0438\u0441\u044c. \u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u043f\u0440\u043e\u0431\u0443\u0439\u0442\u0435 \u0435\u0449\u0435 \u0440\u0430\u0437."
+    },
+    "debug": {
+      "title": "\u041e\u0442\u043b\u0430\u0436\u0438\u0432\u0430\u0442\u044c",
+      "logDirectory": {
+        "title": "\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u0436\u0443\u0440\u043d\u0430\u043b\u043e\u0432",
+        "description": "\u041c\u0435\u0441\u0442\u043e \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f \u0444\u0430\u0439\u043b\u043e\u0432 \u0436\u0443\u0440\u043d\u0430\u043b\u043e\u0432"
+      },
+      "logLevel": {
+        "title": "\u0423\u0440\u043e\u0432\u0435\u043d\u044c \u0436\u0443\u0440\u043d\u0430\u043b\u0430",
+        "description": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435 \u0443\u0440\u043e\u0432\u0435\u043d\u044c \u0434\u0435\u0442\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438 \u0436\u0443\u0440\u043d\u0430\u043b\u0430"
+      },
+      "updateChecks": {
+        "label": "\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u043d\u0430\u043b\u0438\u0447\u0438\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439",
+        "description": "\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u044f\u0442\u044c \u043d\u0430\u043b\u0438\u0447\u0438\u0435 \u043d\u043e\u0432\u044b\u0445 \u0432\u0435\u0440\u0441\u0438\u0439 BreezeType"
+      },
+      "soundTheme": {
+        "label": "\u0417\u0432\u0443\u043a\u043e\u0432\u0430\u044f \u0442\u0435\u043c\u0430",
+        "description": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0437\u0432\u0443\u043a\u043e\u0432\u0443\u044e \u0442\u0435\u043c\u0443 \u0434\u043b\u044f \u043d\u0430\u0447\u0430\u043b\u0430 \u0438 \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0438 \u0437\u0430\u043f\u0438\u0441\u0438 \u043e\u0431\u0440\u0430\u0442\u043d\u043e\u0439 \u0441\u0432\u044f\u0437\u0438."
+      },
+      "wordCorrectionThreshold": {
+        "title": "\u041f\u043e\u0440\u043e\u0433 \u0438\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f \u0441\u043b\u043e\u0432",
+        "description": "\u0427\u0443\u0432\u0441\u0442\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u043a \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u043c \u0438\u0441\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u0438\u044f\u043c \u0441\u043b\u043e\u0432"
+      },
+      "historyLimit": {
+        "title": "\u041f\u0440\u0435\u0434\u0435\u043b \u0438\u0441\u0442\u043e\u0440\u0438\u0438",
+        "description": "\u041c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0435 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0437\u0430\u043f\u0438\u0441\u0435\u0439 \u0438\u0441\u0442\u043e\u0440\u0438\u0438, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u043c\u043e\u0436\u043d\u043e \u0441\u043e\u0445\u0440\u0430\u043d\u0438\u0442\u044c",
+        "entries": "\u0437\u0430\u043f\u0438\u0441\u0438"
+      },
+      "recordingRetention": {
+        "title": "\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u0443\u0434\u0430\u043b\u0435\u043d\u0438\u0435 \u0437\u0430\u043f\u0438\u0441\u0435\u0439",
+        "description": "\u0410\u0432\u0442\u043e\u043c\u0430\u0442\u0438\u0447\u0435\u0441\u043a\u0438 \u0443\u0434\u0430\u043b\u044f\u0439\u0442\u0435 \u0441\u0442\u0430\u0440\u044b\u0435 \u0437\u0430\u043f\u0438\u0441\u0438 \u0434\u043b\u044f \u044d\u043a\u043e\u043d\u043e\u043c\u0438\u0438 \u043c\u0435\u0441\u0442\u0430",
+        "never": "\u041d\u0438\u043a\u043e\u0433\u0434\u0430",
+        "preserveLimit": "\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0439\u0442\u0435 \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044e\u044e \u0432\u0435\u0440\u0441\u0438\u044e {{count}}",
+        "days3": "\u0427\u0435\u0440\u0435\u0437 3 \u0434\u043d\u044f",
+        "weeks2": "\u0427\u0435\u0440\u0435\u0437 2 \u043d\u0435\u0434\u0435\u043b\u0438",
+        "months3": "\u0427\u0435\u0440\u0435\u0437 3 \u043c\u0435\u0441\u044f\u0446\u0430",
+        "placeholder": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0441\u0440\u043e\u043a \u0445\u0440\u0430\u043d\u0435\u043d\u0438\u044f..."
+      },
+      "alwaysOnMicrophone": {
+        "label": "\u0412\u0441\u0435\u0433\u0434\u0430 \u0432\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044b\u0439 \u043c\u0438\u043a\u0440\u043e\u0444\u043e\u043d",
+        "description": "\u0414\u0435\u0440\u0436\u0438\u0442\u0435 \u043c\u0438\u043a\u0440\u043e\u0444\u043e\u043d \u0430\u043a\u0442\u0438\u0432\u043d\u044b\u043c \u0434\u043b\u044f \u0431\u043e\u043b\u0435\u0435 \u0431\u044b\u0441\u0442\u0440\u043e\u0433\u043e \u043e\u0442\u0432\u0435\u0442\u0430"
+      },
+      "clamshellMicrophone": {
+        "title": "\u0420\u0430\u0441\u043a\u043b\u0430\u0434\u043d\u043e\u0439 \u043c\u0438\u043a\u0440\u043e\u0444\u043e\u043d",
+        "description": "\u041c\u0438\u043a\u0440\u043e\u0444\u043e\u043d \u0434\u043b\u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u044f \u043f\u0440\u0438 \u0437\u0430\u043a\u0440\u044b\u0442\u043e\u0439 \u043a\u0440\u044b\u0448\u043a\u0435 \u043d\u043e\u0443\u0442\u0431\u0443\u043a\u0430"
+      },
+      "postProcessingToggle": {
+        "label": "\u041f\u043e\u0441\u0442\u043e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430",
+        "description": "\u0412\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0443\u0442\u043e\u0447\u043d\u0435\u043d\u0438\u0435 \u0442\u0435\u043a\u0441\u0442\u0430 \u0441 \u043f\u043e\u043c\u043e\u0449\u044c\u044e \u0438\u0441\u043a\u0443\u0441\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u0438\u043d\u0442\u0435\u043b\u043b\u0435\u043a\u0442\u0430 \u043f\u043e\u0441\u043b\u0435 \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438"
+      },
+      "muteWhileRecording": {
+        "label": "\u041e\u0442\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0437\u0432\u0443\u043a \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u043f\u0438\u0441\u0438",
+        "description": "\u041e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0438\u0435 \u0437\u0432\u0443\u043a\u0430 \u0441\u0438\u0441\u0442\u0435\u043c\u044b \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0437\u0430\u043f\u0438\u0441\u0438"
+      },
+      "appendTrailingSpace": {
+        "label": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043a\u043e\u043d\u0435\u0447\u043d\u044b\u0439 \u043f\u0440\u043e\u0431\u0435\u043b",
+        "description": "\u0414\u043e\u0431\u0430\u0432\u0438\u0442\u044c \u043f\u0440\u043e\u0431\u0435\u043b \u043f\u043e\u0441\u043b\u0435 \u0432\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043d\u043e\u0439 \u0442\u0440\u0430\u043d\u0441\u043a\u0440\u0438\u043f\u0446\u0438\u0438"
+      },
+      "paths": {
+        "appData": "\u0414\u0430\u043d\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f:",
+        "models": "Speech data:",
+        "settings": "\u041d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438:"
+      }
+    },
+    "about": {
+      "title": "\u041e \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0435",
+      "version": {
+        "title": "\u0412\u0435\u0440\u0441\u0438\u044f",
+        "description": "\u0422\u0435\u043a\u0443\u0449\u0430\u044f \u0432\u0435\u0440\u0441\u0438\u044f BreezeType"
+      },
+      "appDataDirectory": {
+        "title": "\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u0434\u0430\u043d\u043d\u044b\u0445 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f",
+        "description": "\u041c\u0435\u0441\u0442\u043e, \u0433\u0434\u0435 BreezeType \u0445\u0440\u0430\u043d\u0438\u0442 \u0441\u0432\u043e\u0438 \u0434\u0430\u043d\u043d\u044b\u0435"
+      },
+      "sourceCode": {
+        "title": "\u0418\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u043a\u043e\u0434",
+        "description": "\u041f\u0440\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u0438\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u043a\u043e\u0434 \u0438 \u0432\u043d\u0435\u0441\u0442\u0438 \u0441\u0432\u043e\u0439 \u0432\u043a\u043b\u0430\u0434",
+        "button": "\u041f\u043e\u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c \u043d\u0430 GitHub"
+      },
+      "supportDevelopment": {
+        "title": "\u041f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0430 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f",
+        "description": "\u041f\u043e\u043c\u043e\u0433\u0438\u0442\u0435 \u043d\u0430\u043c \u043f\u0440\u043e\u0434\u043e\u043b\u0436\u0438\u0442\u044c \u0441\u043e\u0437\u0434\u0430\u043d\u0438\u0435 BreezeType",
+        "button": "\u041f\u043e\u0436\u0435\u0440\u0442\u0432\u043e\u0432\u0430\u0442\u044c"
+      },
+      "acknowledgments": {
+        "title": "\u0411\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u043e\u0441\u0442\u0438",
+        "whisper": {
+          "title": "Local speech engine",
+          "description": "Choose how BreezeType should run transcript cleanup.",
+          "details": "BreezeType uses local speech processing for fast dictation."
+        }
+      }
+    }
+  },
+  "clipboardOverlay": {
+    "title": "Clipboard history",
+    "searchPlaceholder": "Search clipboard...",
+    "empty": "No clipboard items yet.",
+    "hint": "Enter to paste, Esc to close"
+  },
+  "footer": {
+    "downloadingModel": "Preparing BreezeType...",
+    "checkingUpdates": "\u041f\u0440\u043e\u0432\u0435\u0440\u044f\u0435\u043c \u043d\u0430\u043b\u0438\u0447\u0438\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439...",
+    "updateAvailable": "\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435: {{version}}",
+    "updateAvailableShort": "\u0414\u043e\u0441\u0442\u0443\u043f\u043d\u043e \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435",
+    "upToDate": "\u041d\u0435 \u0442\u0440\u0435\u0431\u0443\u0435\u0442 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439",
+    "downloadUpdate": "\u0421\u043a\u0430\u0447\u0430\u0442\u044c \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435",
+    "restart": "\u041f\u0435\u0440\u0435\u0437\u0430\u043f\u0443\u0441\u043a",
+    "updateCheckingDisabled": "\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439 \u043e\u0442\u043a\u043b\u044e\u0447\u0435\u043d\u0430",
+    "downloading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430... {{progress}} %",
+    "installing": "\u0423\u0441\u0442\u0430\u043d\u043e\u0432\u043a\u0430...",
+    "preparing": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430...",
+    "checkForUpdates": "\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u043d\u0430\u043b\u0438\u0447\u0438\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0439"
+  },
+  "common": {
+    "loading": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430...",
+    "save": "\u0421\u043e\u0445\u0440\u0430\u043d\u044f\u0442\u044c",
+    "cancel": "\u041e\u0442\u043c\u0435\u043d\u0430",
+    "reset": "\u041f\u0435\u0440\u0435\u0437\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c",
+    "add": "\u0414\u043e\u0431\u0430\u0432\u043b\u044f\u0442\u044c",
+    "remove": "\u0423\u0434\u0430\u043b\u044f\u0442\u044c",
+    "delete": "\u0423\u0434\u0430\u043b\u0438\u0442\u044c",
+    "edit": "\u0420\u0435\u0434\u0430\u043a\u0442\u0438\u0440\u043e\u0432\u0430\u0442\u044c",
+    "create": "\u0421\u043e\u0437\u0434\u0430\u0432\u0430\u0442\u044c",
+    "update": "\u041e\u0431\u043d\u043e\u0432\u043b\u044f\u0442\u044c",
+    "close": "\u0417\u0430\u043a\u0440\u044b\u0432\u0430\u0442\u044c",
+    "open": "\u041e\u0442\u043a\u0440\u044b\u0442\u044c",
+    "default": "\u041f\u043e \u0443\u043c\u043e\u043b\u0447\u0430\u043d\u0438\u044e",
+    "enabled": "\u0412\u043a\u043b\u044e\u0447\u0435\u043d\u043e",
+    "disabled": "\u041d\u0435\u043f\u043e\u043b\u043d\u043e\u0446\u0435\u043d\u043d\u044b\u0439",
+    "on": "\u041d\u0430",
+    "off": "\u0412\u044b\u043a\u043b\u044e\u0447\u0435\u043d\u043d\u044b\u0439",
+    "yes": "\u0414\u0430",
+    "no": "\u041d\u0435\u0442",
+    "noOptionsFound": "\u0412\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e",
+    "noResults": "No results",
+    "search": "Search",
+    "searchHistory": "Search history"
+  },
+  "accessibility": {
+    "permissionsRequired": "\u0422\u0440\u0435\u0431\u0443\u044e\u0442\u0441\u044f \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u044f \u043d\u0430 \u0434\u043e\u0441\u0442\u0443\u043f",
+    "permissionsDescription": "BreezeType \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u044f \u043d\u0430 \u0434\u043e\u0441\u0442\u0443\u043f \u0434\u043b\u044f \u0432\u0432\u043e\u0434\u0430 \u0440\u0430\u0441\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u0433\u043e \u0442\u0435\u043a\u0441\u0442\u0430.",
+    "openSettings": "\u041e\u0442\u043a\u0440\u044b\u0442\u044c \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438 \u0441\u0438\u0441\u0442\u0435\u043c\u044b",
+    "dismiss": "\u0423\u0432\u043e\u043b\u044c\u043d\u044f\u0442\u044c"
+  },
+  "errors": {
+    "loadDirectory": "\u041e\u0448\u0438\u0431\u043a\u0430 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u043a\u0430\u0442\u0430\u043b\u043e\u0433\u0430: {{error}}."
+  },
+  "appLanguage": {
+    "title": "\u042f\u0437\u044b\u043a \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f",
+    "description": "\u0418\u0437\u043c\u0435\u043d\u0438\u0442\u044c \u044f\u0437\u044b\u043a\u0430 \u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0430 BreezeType"
+  },
+  "overlay": {
+    "transcribing": "\u0420\u0430\u0441\u0448\u0438\u0444\u0440\u043e\u0432\u043a\u0430..."
+  },
+  "nav": {
+    "home": "Home",
+    "history": "История голоса",
+    "clipboardHistory": "История буфера обмена",
+    "dictionary": "Dictionary",
+    "snippets": "Snips",
+    "style": "Style",
+    "notes": "Notes",
+    "meetings": "Meetings",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "meetingsPage": {
+    "title": "Meetings",
+    "subtitle": "Capture mic + system audio for fast, local transcripts.",
+    "status": {
+      "recording": "Recording",
+      "ready": "Ready"
+    },
+    "nameLabel": "Meeting name (optional)",
+    "namePlaceholder": "Product sync, weekly standup\u2026",
+    "nameHint": "Leave blank to auto-name with the lightweight model.",
+    "includeSystemAudio": "Include system audio",
+    "includeSystemAudioHint": "Captures meeting audio from other apps. Turn off to record only your mic.",
+    "startButton": "Start recording",
+    "stopButton": "Stop & save",
+    "stopping": "Stopping...",
+    "recordingStarted": "Meeting recording started",
+    "recordingStopped": "Meeting saved",
+    "startError": "Couldn\u2019t start meeting recording.",
+    "stopError": "Couldn\u2019t finish the meeting recording.",
+    "download": "Download",
+    "downloaded": "Meeting downloaded",
+    "downloadError": "Couldn't download the meeting.",
+    "listTitle": "Recent meetings",
+    "count": "{{count}} total",
+    "loading": "Loading meetings...",
+    "emptyTitle": "No meetings yet",
+    "emptyBody": "Start recording to see your meetings here.",
+    "ended": "Ended {{time}}",
+    "durationLabel": "{{time}}",
+    "play": "Play",
+    "hidePlayer": "Hide player",
+    "audioLoading": "Loading audio...",
+    "audioError": "Couldn\u2019t load the meeting audio.",
+    "searchPlaceholder": "Search meetings",
+    "filter": "Filter",
+    "filterTitle": "Filter by tag",
+    "filterAll": "All tags",
+    "filterEmpty": "No tags set yet.",
+    "tagsLabel": "Tags",
+    "tagsPlaceholder": "Add a tag...",
+    "tagsEmpty": "No tags yet.",
+    "rename": "Rename",
+    "save": "Save",
+    "cancel": "Cancel",
+    "renameEmpty": "Meeting name can\u2019t be empty.",
+    "renameError": "Couldn\u2019t rename the meeting.",
+    "deleteError": "Couldn't delete the meeting.",
+    "refresh": "Refresh",
+    "source": {
+      "system": "System + mic",
+      "mic": "Mic only"
+    },
+    "back": "Back",
+    "notesTitle": "Notes",
+    "notesSubtitle": "Capture quick takeaways during the meeting.",
+    "notesCount": "{{count}} notes",
+    "notesPlaceholder": "Type a note and press Enter",
+    "notesEmpty": "No notes yet.",
+    "notesHint": "Click a transcript line to pin the note timestamp.",
+    "notesLoading": "Loading notes...",
+    "noteError": "Couldn't save the note.",
+    "transcriptTitle": "Transcript",
+    "transcriptCopy": "Copy transcript",
+    "transcriptCopied": "Transcript copied",
+    "transcriptCopyError": "Couldn't copy the transcript.",
+    "transcriptLoading": "Generating transcript...",
+    "transcriptEmpty": "No spoken words detected durring meeting.",
+    "transcriptError": "Couldn't load the transcript."
+  },
+  "meetingPrompt": {
+    "title": "Meeting starting",
+    "subtitle": "Detected in {{source}}",
+    "startButton": "Start recording",
+    "starting": "Starting...",
+    "dismiss": "Not now",
+    "startError": "Couldn't start meeting recording."
+  },
+  "home": {
+    "welcome": "Welcome back",
+    "subtitle": "Here's what your voice looks like today.",
+    "stats": {
+      "words": "words",
+      "wpm": "WPM",
+      "time": "time"
+    },
+    "hero": {
+      "title": "Make BreezeType sound like you",
+      "description": "BreezeType adapts to how you write across apps. Personalize your style for messages, work chats, emails, and more.",
+      "cta": "Start now"
+    },
+    "sections": {
+      "snippets": "Snips",
+      "history": "Daily history"
+    },
+    "snippets": {
+      "empty": "No snips yet."
+    },
+    "history": {
+      "today": "Today",
+      "empty": "No history yet.",
+      "copy": "Copy",
+      "copied": "Copied to clipboard",
+      "filter": "Filter",
+      "filterTitle": "Filter by app",
+      "filterAll": "All apps",
+      "filterEmpty": "No apps yet"
+    }
+  },
+  "notesPage": {
+    "title": "Notes",
+    "subtitle": "Capture ideas while you dictate.",
+    "newNote": "New note",
+    "empty": "No notes yet.",
+    "emptyBody": "Create a note to start capturing thoughts.",
+    "searchPlaceholder": "Search notes",
+    "titlePlaceholder": "Title",
+    "bodyPlaceholder": "Start talking to add notes...",
+    "untitled": "Untitled note",
+    "saving": "Saving...",
+    "saved": "Saved"
+  },
+  "dictionaryPage": {
+    "title": "Dictionary",
+    "subtitle": "Teach BreezeType the words you use most.",
+    "saving": "Saving...",
+    "entries": {
+      "title": "Dictionary entries",
+      "description": "Add terms and optional definitions to improve word correction.",
+      "empty": "No dictionary entries yet.",
+      "untitled": "Untitled term",
+      "helper": "Add a term and optional definition.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "termLabel": "Term",
+      "termPlaceholder": "Acme CRM",
+      "definitionLabel": "Definition",
+      "definitionPlaceholder": "Internal customer platform",
+      "searchPlaceholder": "Search dictionary",
+      "addTitle": "Add term",
+      "addSubtitle": "Add a term and optional definition.",
+      "create": "Create term"
+    }
+  },
+  "placeholders": {
+    "dictionary": "Your custom terminology and definitions will appear here.",
+    "snippets": "Reusable snips and saved phrases will appear here.",
+    "style": "Tune tone and formatting preferences here.",
+    "notes": "Capture quick notes from your dictation history.",
+    "help": "Tips and support resources will live here."
+  },
+  "help": {
+    "title": "Help",
+    "subtitle": "Quick diagnostics for BreezeType.",
+    "status": {
+      "ready": "Ready",
+      "loading": "Loading",
+      "issue": "Issue"
+    },
+    "tutorial": {
+      "open": "Tutorial",
+      "title": "Tutorial",
+      "subtitle": "A guided practice for dictation, clipboard history, tasks, and meeting recordings.",
+      "cardTitle": "Tutorial",
+      "cardSubtitle": "Practice dictation, clipboard history, tasks, and meeting recordings.",
+      "skip": "Skip",
+      "previous": "Previous",
+      "next": "Next",
+      "stepStatus": "Step {{current}} of {{total}}",
+      "reminder": "This tutorial is always available in the Help area.",
+      "steps": {
+        "dictation": {
+          "eyebrow": "Dictation",
+          "title": "Speak once",
+          "description": "Use your current shortcut, read one phrase, and watch BreezeType place the text.",
+          "action": "Try dictation"
+        },
+        "clipboard": {
+          "eyebrow": "Clipboard history",
+          "title": "Find and paste",
+          "description": "Copy two snippets, then practice pulling them back with the clipboard manager.",
+          "action": "Try clipboard history"
+        },
+        "tasks": {
+          "eyebrow": "Tasks",
+          "title": "Capture next steps",
+          "description": "Open Quick Task, type a natural-language task, and see how BreezeType reads it.",
+          "action": "Try quick task"
+        },
+        "meetings": {
+          "eyebrow": "Meeting recordings",
+          "title": "Record and review",
+          "description": "Record the call you are already in. BreezeType transcribes locally without adding a bot.",
+          "action": "Start a meeting recording"
+        },
+        "finish": {
+          "eyebrow": "All set",
+          "title": "You are ready",
+          "description": "You have the core BreezeType loop: speak, reuse clips, capture tasks, and record meetings.",
+          "action": "Start using BreezeType"
+        }
+      }
+    },
+    "issue": {
+      "title": "Current issue",
+      "description": "If something is wrong, you\u2019ll see it here.",
+      "none": "No issues detected."
+    },
+    "permissions": {
+      "title": "\u0420\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u044f",
+      "subtitle": "\u041f\u0440\u043e\u0432\u0435\u0440\u044c\u0442\u0435 \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u044b\u0435 \u0441\u0438\u0441\u0442\u0435\u043c\u043d\u044b\u0435 \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u044f.",
+      "refresh": "\u041e\u0431\u043d\u043e\u0432\u0438\u0442\u044c",
+      "notSupported": "\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430 \u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043d\u0438\u0439 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u0430 \u0442\u043e\u043b\u044c\u043a\u043e \u0432 macOS.",
+      "status": {
+        "on": "\u0412\u043a\u043b.",
+        "off": "\u0412\u044b\u043a\u043b.",
+        "checking": "\u041f\u0440\u043e\u0432\u0435\u0440\u043a\u0430...",
+        "error": "\u041d\u0435\u0434\u043e\u0441\u0442\u0443\u043f\u043d\u043e"
+      },
+      "items": {
+        "accessibility": "\u0423\u043d\u0438\u0432\u0435\u0440\u0441\u0430\u043b\u044c\u043d\u044b\u0439 \u0434\u043e\u0441\u0442\u0443\u043f",
+        "microphone": "\u041c\u0438\u043a\u0440\u043e\u0444\u043e\u043d",
+        "screenRecording": "\u0417\u0430\u043f\u0438\u0441\u044c \u044d\u043a\u0440\u0430\u043d\u0430",
+        "inputMonitoring": "\u041c\u043e\u043d\u0438\u0442\u043e\u0440\u0438\u043d\u0433 \u0432\u0432\u043e\u0434\u0430"
+      }
+    }
+  },
+  "commandsPage": {
+    "title": "Snips",
+    "subtitle": "Create voice commands that trigger actions.",
+    "saving": "Saving...",
+    "status": {
+      "unsaved": "Unsaved changes"
+    },
+    "open": {
+      "title": "Open",
+      "description": "Say \u201copen <phrase>\u201d to launch apps. Targets can be app names or full paths.",
+      "phraseLabel": "Spoken phrase",
+      "phrasePlaceholder": "calendar",
+      "targetLabel": "App name or path",
+      "targetPlaceholder": "Calendar or /Applications/Calendar.app",
+      "empty": "No open commands yet."
+    },
+    "errors": {
+      "load": "Failed to load commands",
+      "save": "Failed to save commands"
+    },
+    "takeNote": {
+      "title": "Take note",
+      "description": "Say a quick phrase to open Notes and keep dictating into a new note.",
+      "examplesLabel": "Examples",
+      "example1": "Take note",
+      "example2": "Take note project kickoff ideas",
+      "example3": "Take a note meeting follow-ups"
+    },
+    "snippets": {
+      "title": "Snips",
+      "description": "Reusable expansions you can trigger by voice or typing.",
+      "empty": "No snips yet.",
+      "untitled": "Untitled snippet",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "idLabel": "Snippet ID",
+      "idPlaceholder": "support_intro",
+      "triggersLabel": "Triggers (comma separated)",
+      "triggersPlaceholder": "support intro, help me",
+      "templateLabel": "Template",
+      "templatePlaceholder": "Thanks for reaching out...",
+      "variablesLabel": "Variables: {{variables}}",
+      "helper": "Short trigger phrases that expand into the template.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "addTrigger": "Add trigger",
+      "removeTrigger": "Remove trigger",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "What this snippet does",
+      "searchPlaceholder": "Search snips",
+      "addTitle": "Add snippet",
+      "addSubtitle": "Define triggers and the text that should expand.",
+      "create": "Create snippet"
+    }
+  }
+}

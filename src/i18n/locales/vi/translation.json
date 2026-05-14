@@ -1,0 +1,746 @@
+{
+  "_comment": "Vietnamese translation for BreezeType.",
+  "tray": {
+    "settings": "C\u00e0i \u0111\u1eb7t...",
+    "checkUpdates": "Ki\u1ec3m tra c\u1eadp nh\u1eadt...",
+    "startMeetingRecording": "B\u1eaft \u0111\u1ea7u ghi \u00e2m cu\u1ed9c h\u1ecdp",
+    "stopMeetingRecording": "D\u1eebng ghi \u00e2m cu\u1ed9c h\u1ecdp",
+    "createTask": "Create task",
+    "quit": "Tho\u00e1t",
+    "cancel": "H\u1ee7y"
+  },
+  "sidebar": {
+    "general": "Chung",
+    "advanced": "N\u00e2ng cao",
+    "postProcessing": "X\u1eed l\u00fd sau",
+    "history": "L\u1ecbch s\u1eed",
+    "debug": "G\u1ee1 l\u1ed7i",
+    "about": "Gi\u1edbi thi\u1ec7u"
+  },
+  "onboarding": {
+    "subtitle": "BreezeType is getting ready.",
+    "recommended": "\u0110\u1ec1 xu\u1ea5t",
+    "download": "T\u1ea3i xu\u1ed1ng",
+    "downloading": "\u0110ang t\u1ea3i xu\u1ed1ng...",
+    "modelCard": {
+      "accuracy": "\u0111\u1ed9 ch\u00ednh x\u00e1c",
+      "speed": "t\u1ed1c \u0111\u1ed9"
+    },
+    "models": {
+      "small": {
+        "name": "BreezeType setup",
+        "description": "Nhanh v\u00e0 kh\u00e1 ch\u00ednh x\u00e1c."
+      },
+      "medium": {
+        "name": "BreezeType setup",
+        "description": "\u0110\u1ed9 ch\u00ednh x\u00e1c t\u1ed1t, t\u1ed1c \u0111\u1ed9 trung b\u00ecnh"
+      },
+      "turbo": {
+        "name": "BreezeType setup",
+        "description": "C\u00e2n b\u1eb1ng gi\u1eefa \u0111\u1ed9 ch\u00ednh x\u00e1c v\u00e0 t\u1ed1c \u0111\u1ed9."
+      },
+      "large": {
+        "name": "BreezeType setup",
+        "description": "\u0110\u1ed9 ch\u00ednh x\u00e1c t\u1ed1t, nh\u01b0ng ch\u1eadm."
+      },
+      "parakeet-tdt-0.6b-v3": {
+        "name": "BreezeType setup",
+        "description": "Nhanh v\u00e0 ch\u00ednh x\u00e1c"
+      }
+    },
+    "errors": {
+      "loadModels": "BreezeType couldn't finish getting ready. Please try again.",
+      "downloadModel": "BreezeType couldn't finish setup. Please check your connection and try again."
+    }
+  },
+  "modelSelector": {
+    "welcome": "Ch\u00e0o m\u1eebng \u0111\u1ebfn v\u1edbi BreezeType!",
+    "downloadPrompt": "BreezeType needs a quick one-time setup before dictation is ready.",
+    "availableModels": "Ready",
+    "downloadModels": "Set Up BreezeType",
+    "chooseModel": "Set Up BreezeType",
+    "active": "\u0110ang ho\u1ea1t \u0111\u1ed9ng",
+    "download": "T\u1ea3i xu\u1ed1ng",
+    "downloadSize": "Required download",
+    "noModelsAvailable": "BreezeType setup is not available right now.",
+    "readyOptionTitle": "Ready",
+    "readyOptionDescription": "BreezeType is ready for local dictation.",
+    "setupOptionTitle": "BreezeType setup",
+    "setupOptionDescription": "Required for fast local dictation.",
+    "deleteError": "BreezeType could not remove that download. Please try again.",
+    "extracting": "Finishing setup...",
+    "extractingMultiple": "Finishing setup...",
+    "extractingGeneric": "Finishing setup...",
+    "downloading": "\u0110ang t\u1ea3i xu\u1ed1ng {{percentage}}%",
+    "downloadingMultiple": "Downloading...",
+    "modelReady": "Ready",
+    "loading": "Getting ready...",
+    "loadingGeneric": "Getting ready...",
+    "modelError": "BreezeType needs attention. Please try again.",
+    "modelUnloaded": "Ready",
+    "noModelDownloadRequired": "Setup required",
+    "deleteModel": "Remove offline data",
+    "statusReady": "S\u1eb5n s\u00e0ng",
+    "statusLoading": "Getting ready",
+    "statusIssue": "Needs attention"
+  },
+  "settings": {
+    "general": {
+      "title": "Chung",
+      "shortcut": {
+        "title": "Ph\u00edm t\u1eaft BreezeType",
+        "description": "C\u1ea5u h\u00ecnh ph\u00edm t\u1eaft \u0111\u1ec3 k\u00edch ho\u1ea1t ghi \u00e2m chuy\u1ec3n \u0111\u1ed5i gi\u1ecdng n\u00f3i th\u00e0nh v\u0103n b\u1ea3n",
+        "loading": "\u0110ang t\u1ea3i ph\u00edm t\u1eaft...",
+        "none": "Ch\u01b0a c\u1ea5u h\u00ecnh ph\u00edm t\u1eaft",
+        "notFound": "Kh\u00f4ng t\u00ecm th\u1ea5y ph\u00edm t\u1eaft",
+        "pressKeys": "Nh\u1ea5n ph\u00edm...",
+        "bindings": {
+          "transcribe": {
+            "name": "Chuy\u1ec3n \u0111\u1ed5i",
+            "description": "Chuy\u1ec3n \u0111\u1ed5i gi\u1ecdng n\u00f3i c\u1ee7a b\u1ea1n th\u00e0nh v\u0103n b\u1ea3n."
+          },
+          "cancel": {
+            "name": "H\u1ee7y",
+            "description": "H\u1ee7y b\u1ea3n ghi hi\u1ec7n t\u1ea1i."
+          },
+          "clipboard_history": {
+            "name": "Clipboard history",
+            "description": "Opens the clipboard history picker."
+          }
+        },
+        "errors": {
+          "restore": "Kh\u00f4ng th\u1ec3 kh\u00f4i ph\u1ee5c ph\u00edm t\u1eaft g\u1ed1c",
+          "set": "Kh\u00f4ng th\u1ec3 \u0111\u1eb7t ph\u00edm t\u1eaft: {{error}}",
+          "reset": "Kh\u00f4ng th\u1ec3 \u0111\u1eb7t l\u1ea1i ph\u00edm t\u1eaft v\u1ec1 gi\u00e1 tr\u1ecb g\u1ed1c"
+        }
+      },
+      "language": {
+        "title": "Ng\u00f4n ng\u1eef",
+        "description": "Ch\u1ecdn ng\u00f4n ng\u1eef \u0111\u1ec3 nh\u1eadn d\u1ea1ng gi\u1ecdng n\u00f3i. T\u1ef1 \u0111\u1ed9ng s\u1ebd t\u1ef1 \u0111\u1ed9ng x\u00e1c \u0111\u1ecbnh ng\u00f4n ng\u1eef, trong khi ch\u1ecdn m\u1ed9t ng\u00f4n ng\u1eef c\u1ee5 th\u1ec3 c\u00f3 th\u1ec3 c\u1ea3i thi\u1ec7n \u0111\u1ed9 ch\u00ednh x\u00e1c cho ng\u00f4n ng\u1eef \u0111\u00f3.",
+        "descriptionUnsupported": "BreezeType automatically detects the language. No manual selection is needed.",
+        "searchPlaceholder": "T\u00ecm ki\u1ebfm ng\u00f4n ng\u1eef...",
+        "noResults": "Kh\u00f4ng t\u00ecm th\u1ea5y ng\u00f4n ng\u1eef",
+        "auto": "T\u1ef1 \u0111\u1ed9ng"
+      },
+      "pushToTalk": {
+        "label": "Nh\u1ea5n \u0111\u1ec3 n\u00f3i",
+        "description": "Gi\u1eef \u0111\u1ec3 ghi \u00e2m, th\u1ea3 \u0111\u1ec3 d\u1eebng"
+      },
+      "theme": {
+        "title": "Theme",
+        "description": "Choose light or dark mode, or follow the system setting.",
+        "options": {
+          "system": "System (Default)",
+          "light": "Light",
+          "dark": "Dark"
+        }
+      }
+    },
+    "sound": {
+      "title": "\u00c2m thanh",
+      "microphone": {
+        "title": "Micr\u00f4",
+        "description": "Ch\u1ecdn thi\u1ebft b\u1ecb micr\u00f4 \u01b0a th\u00edch c\u1ee7a b\u1ea1n",
+        "placeholder": "Ch\u1ecdn micr\u00f4...",
+        "loading": "\u0110ang t\u1ea3i..."
+      },
+      "audioFeedback": {
+        "label": "Ph\u1ea3n h\u1ed3i \u00e2m thanh",
+        "description": "Ph\u00e1t \u00e2m thanh khi b\u1eaft \u0111\u1ea7u v\u00e0 k\u1ebft th\u00fac ghi \u00e2m"
+      },
+      "outputDevice": {
+        "title": "Thi\u1ebft b\u1ecb \u0111\u1ea7u ra",
+        "description": "Ch\u1ecdn thi\u1ebft b\u1ecb \u0111\u1ea7u ra \u00e2m thanh \u01b0a th\u00edch c\u1ee7a b\u1ea1n cho \u00e2m thanh ph\u1ea3n h\u1ed3i",
+        "placeholder": "Ch\u1ecdn thi\u1ebft b\u1ecb \u0111\u1ea7u ra...",
+        "loading": "\u0110ang t\u1ea3i..."
+      },
+      "volume": {
+        "title": "\u00c2m l\u01b0\u1ee3ng",
+        "description": "\u0110i\u1ec1u ch\u1ec9nh \u00e2m l\u01b0\u1ee3ng c\u1ee7a \u00e2m thanh ph\u1ea3n h\u1ed3i"
+      }
+    },
+    "advanced": {
+      "title": "N\u00e2ng cao",
+      "startHidden": {
+        "label": "Kh\u1edfi \u0111\u1ed9ng \u1ea9n",
+        "description": "Kh\u1edfi \u0111\u1ed9ng v\u00e0o khay h\u1ec7 th\u1ed1ng m\u00e0 kh\u00f4ng m\u1edf c\u1eeda s\u1ed5."
+      },
+      "autostart": {
+        "label": "Kh\u1edfi \u0111\u1ed9ng c\u00f9ng h\u1ec7 th\u1ed1ng",
+        "description": "T\u1ef1 \u0111\u1ed9ng kh\u1edfi \u0111\u1ed9ng BreezeType khi b\u1ea1n \u0111\u0103ng nh\u1eadp v\u00e0o m\u00e1y t\u00ednh."
+      },
+      "overlay": {
+        "title": "V\u1ecb tr\u00ed l\u1edbp ph\u1ee7",
+        "description": "Hi\u1ec3n th\u1ecb l\u1edbp ph\u1ee7 ph\u1ea3n h\u1ed3i tr\u1ef1c quan trong qu\u00e1 tr\u00ecnh ghi \u00e2m v\u00e0 chuy\u1ec3n \u0111\u1ed5i. Tr\u00ean Linux, 'Kh\u00f4ng c\u00f3' \u0111\u01b0\u1ee3c khuy\u1ebfn ngh\u1ecb.",
+        "options": {
+          "none": "Kh\u00f4ng c\u00f3",
+          "bottom": "D\u01b0\u1edbi",
+          "top": "Tr\u00ean"
+        }
+      },
+      "meetingDetection": {
+        "label": "Meeting detection",
+        "description": "Show a small prompt when a meeting app or tab becomes active."
+      },
+      "pasteMethod": {
+        "title": "Ph\u01b0\u01a1ng th\u1ee9c d\u00e1n",
+        "description": "Ch\u1ecdn c\u00e1ch ch\u00e8n v\u0103n b\u1ea3n. Tr\u1ef1c ti\u1ebfp: m\u00f4 ph\u1ecfng g\u00f5 ph\u00edm qua \u0111\u1ea7u v\u00e0o h\u1ec7 th\u1ed1ng. Kh\u00f4ng c\u00f3: b\u1ecf qua d\u00e1n, ch\u1ec9 c\u1eadp nh\u1eadt l\u1ecbch s\u1eed/clipboard.",
+        "options": {
+          "clipboard": "Clipboard ({{modifier}}+V)",
+          "clipboardCtrlShiftV": "Clipboard (Ctrl+Shift+V)",
+          "clipboardShiftInsert": "Clipboard (Shift+Insert)",
+          "direct": "Tr\u1ef1c ti\u1ebfp",
+          "none": "Kh\u00f4ng c\u00f3"
+        }
+      },
+      "clipboardHandling": {
+        "title": "X\u1eed l\u00fd Clipboard",
+        "description": "Kh\u00f4ng s\u1eeda \u0111\u1ed5i Clipboard gi\u1eef nguy\u00ean n\u1ed9i dung clipboard hi\u1ec7n t\u1ea1i sau khi chuy\u1ec3n \u0111\u1ed5i. Sao ch\u00e9p v\u00e0o Clipboard \u0111\u1ec3 l\u1ea1i k\u1ebft qu\u1ea3 chuy\u1ec3n \u0111\u1ed5i trong clipboard sau khi d\u00e1n.",
+        "options": {
+          "dontModify": "Kh\u00f4ng s\u1eeda \u0111\u1ed5i Clipboard",
+          "copyToClipboard": "Sao ch\u00e9p v\u00e0o Clipboard"
+        }
+      },
+      "translateToEnglish": {
+        "label": "D\u1ecbch sang ti\u1ebfng Anh",
+        "description": "T\u1ef1 \u0111\u1ed9ng d\u1ecbch gi\u1ecdng n\u00f3i t\u1eeb c\u00e1c ng\u00f4n ng\u1eef kh\u00e1c sang ti\u1ebfng Anh trong qu\u00e1 tr\u00ecnh chuy\u1ec3n \u0111\u1ed5i.",
+        "descriptionUnsupported": "Translation is not available with the current speech setup."
+      },
+      "modelUnload": {
+        "title": "Release Speech Resources",
+        "description": "Automatically free local speech resources after BreezeType has been idle for the specified time.",
+        "options": {
+          "never": "Kh\u00f4ng bao gi\u1edd",
+          "immediately": "Ngay l\u1eadp t\u1ee9c",
+          "min2": "Sau 2 ph\u00fat",
+          "min5": "Sau 5 ph\u00fat",
+          "min10": "Sau 10 ph\u00fat",
+          "min15": "Sau 15 ph\u00fat",
+          "hour1": "Sau 1 gi\u1edd",
+          "sec5": "Sau 5 gi\u00e2y (G\u1ee1 l\u1ed7i)"
+        }
+      },
+      "customWords": {
+        "title": "T\u1eeb t\u00f9y ch\u1ec9nh",
+        "description": "Th\u00eam c\u00e1c t\u1eeb th\u01b0\u1eddng b\u1ecb nghe nh\u1ea7m ho\u1eb7c vi\u1ebft sai trong qu\u00e1 tr\u00ecnh chuy\u1ec3n \u0111\u1ed5i. H\u1ec7 th\u1ed1ng s\u1ebd t\u1ef1 \u0111\u1ed9ng s\u1eeda c\u00e1c t\u1eeb c\u00f3 \u00e2m thanh t\u01b0\u01a1ng t\u1ef1 \u0111\u1ec3 kh\u1edbp v\u1edbi danh s\u00e1ch c\u1ee7a b\u1ea1n.",
+        "placeholder": "Th\u00eam m\u1ed9t t\u1eeb",
+        "add": "Th\u00eam",
+        "remove": "X\u00f3a {{word}}"
+      }
+    },
+    "postProcessing": {
+      "title": "X\u1eed l\u00fd sau",
+      "disabledNotice": "X\u1eed l\u00fd sau hi\u1ec7n \u0111ang b\u1ecb t\u1eaft. B\u1eadt n\u00f3 trong c\u00e0i \u0111\u1eb7t G\u1ee1 l\u1ed7i \u0111\u1ec3 c\u1ea5u h\u00ecnh.",
+      "api": {
+        "title": "Cleanup connection",
+        "provider": {
+          "title": "Nh\u00e0 cung c\u1ea5p",
+          "description": "Choose how BreezeType should run transcript cleanup."
+        },
+        "appleIntelligence": {
+          "title": "Apple Intelligence",
+          "description": "Ch\u1ea1y ho\u00e0n to\u00e0n tr\u00ean thi\u1ebft b\u1ecb. Kh\u00f4ng c\u1ea7n kh\u00f3a API ho\u1eb7c truy c\u1eadp m\u1ea1ng.",
+          "requirements": "Y\u00eau c\u1ea7u Mac Apple Silicon ch\u1ea1y macOS Tahoe (26.0) tr\u1edf l\u00ean. Apple Intelligence ph\u1ea3i \u0111\u01b0\u1ee3c b\u1eadt trong C\u00e0i \u0111\u1eb7t H\u1ec7 th\u1ed1ng."
+        },
+        "baseUrl": {
+          "title": "Custom connection",
+          "description": "Connection address for custom cleanup setups.",
+          "placeholder": "Connection address"
+        },
+        "apiKey": {
+          "title": "Connection key",
+          "description": "Private key for the selected cleanup connection.",
+          "placeholder": "Paste key"
+        },
+        "model": {
+          "title": "Cleanup option",
+          "descriptionApple": "Cung c\u1ea5p gi\u1edbi h\u1ea1n token t\u00f9y ch\u1ecdn ho\u1eb7c gi\u1eef c\u00e0i \u0111\u1eb7t m\u1eb7c \u0111\u1ecbnh tr\u00ean thi\u1ebft b\u1ecb.",
+          "descriptionCustom": "Provide the cleanup option expected by your custom endpoint.",
+          "descriptionDefault": "Choose a cleanup option exposed by the selected connection.",
+          "placeholderApple": "Apple Intelligence",
+          "placeholderWithOptions": "Search or select an option",
+          "placeholderNoOptions": "Type an option name",
+          "refreshModels": "Refresh options"
+        }
+      },
+      "prompts": {
+        "title": "Prompt",
+        "selectedPrompt": {
+          "title": "Prompt \u0111\u00e3 ch\u1ecdn",
+          "description": "Ch\u1ecdn m\u1ed9t m\u1eabu \u0111\u1ec3 tinh ch\u1ec9nh b\u1ea3n ghi ho\u1eb7c t\u1ea1o m\u1edbi. S\u1eed d\u1ee5ng ${output} trong v\u0103n b\u1ea3n prompt \u0111\u1ec3 tham chi\u1ebfu b\u1ea3n ghi \u0111\u00e3 ch\u1ee5p."
+        },
+        "noPrompts": "Kh\u00f4ng c\u00f3 prompt n\u00e0o",
+        "selectPrompt": "Ch\u1ecdn m\u1ed9t prompt",
+        "createNew": "T\u1ea1o Prompt m\u1edbi",
+        "promptLabel": "Nh\u00e3n Prompt",
+        "promptLabelPlaceholder": "Nh\u1eadp t\u00ean prompt",
+        "promptInstructions": "H\u01b0\u1edbng d\u1eabn Prompt",
+        "promptInstructionsPlaceholder": "Vi\u1ebft h\u01b0\u1edbng d\u1eabn \u0111\u1ec3 ch\u1ea1y sau khi chuy\u1ec3n \u0111\u1ed5i. V\u00ed d\u1ee5: C\u1ea3i thi\u1ec7n ng\u1eef ph\u00e1p v\u00e0 \u0111\u1ed9 r\u00f5 r\u00e0ng cho v\u0103n b\u1ea3n sau: ${output}",
+        "promptTip": "M\u1eb9o: S\u1eed d\u1ee5ng <code>${output}</code> \u0111\u1ec3 ch\u00e8n v\u0103n b\u1ea3n \u0111\u00e3 chuy\u1ec3n \u0111\u1ed5i v\u00e0o prompt c\u1ee7a b\u1ea1n.",
+        "updatePrompt": "C\u1eadp nh\u1eadt Prompt",
+        "deletePrompt": "X\u00f3a Prompt",
+        "createPrompt": "T\u1ea1o Prompt",
+        "cancel": "H\u1ee7y",
+        "selectToEdit": "Ch\u1ecdn m\u1ed9t prompt \u1edf tr\u00ean \u0111\u1ec3 xem v\u00e0 ch\u1ec9nh s\u1eeda chi ti\u1ebft.",
+        "createFirst": "Nh\u1ea5n 'T\u1ea1o Prompt m\u1edbi' \u1edf tr\u00ean \u0111\u1ec3 t\u1ea1o prompt x\u1eed l\u00fd sau \u0111\u1ea7u ti\u00ean c\u1ee7a b\u1ea1n."
+      }
+    },
+    "history": {
+      "title": "L\u1ecbch s\u1eed",
+      "openFolder": "M\u1edf th\u01b0 m\u1ee5c ghi \u00e2m",
+      "loading": "\u0110ang t\u1ea3i l\u1ecbch s\u1eed...",
+      "empty": "Ch\u01b0a c\u00f3 b\u1ea3n ghi n\u00e0o. B\u1eaft \u0111\u1ea7u ghi \u00e2m \u0111\u1ec3 x\u00e2y d\u1ef1ng l\u1ecbch s\u1eed c\u1ee7a b\u1ea1n!",
+      "copyToClipboard": "Sao ch\u00e9p b\u1ea3n ghi v\u00e0o clipboard",
+      "save": "L\u01b0u b\u1ea3n ghi",
+      "unsave": "X\u00f3a kh\u1ecfi \u0111\u00e3 l\u01b0u",
+      "delete": "X\u00f3a m\u1ee5c",
+      "deleteError": "Kh\u00f4ng th\u1ec3 x\u00f3a m\u1ee5c. Vui l\u00f2ng th\u1eed l\u1ea1i."
+    },
+    "debug": {
+      "title": "G\u1ee1 l\u1ed7i",
+      "logDirectory": {
+        "title": "Th\u01b0 m\u1ee5c nh\u1eadt k\u00fd",
+        "description": "V\u1ecb tr\u00ed l\u01b0u tr\u1eef c\u00e1c t\u1ec7p nh\u1eadt k\u00fd"
+      },
+      "logLevel": {
+        "title": "M\u1ee9c nh\u1eadt k\u00fd",
+        "description": "\u0110\u1eb7t m\u1ee9c \u0111\u1ed9 chi ti\u1ebft c\u1ee7a nh\u1eadt k\u00fd"
+      },
+      "updateChecks": {
+        "label": "Ki\u1ec3m tra c\u1eadp nh\u1eadt",
+        "description": "T\u1ef1 \u0111\u1ed9ng ki\u1ec3m tra phi\u00ean b\u1ea3n m\u1edbi c\u1ee7a BreezeType"
+      },
+      "soundTheme": {
+        "label": "Ch\u1ee7 \u0111\u1ec1 \u00e2m thanh",
+        "description": "Ch\u1ecdn ch\u1ee7 \u0111\u1ec1 \u00e2m thanh cho ph\u1ea3n h\u1ed3i b\u1eaft \u0111\u1ea7u v\u00e0 k\u1ebft th\u00fac ghi \u00e2m"
+      },
+      "wordCorrectionThreshold": {
+        "title": "Ng\u01b0\u1ee1ng s\u1eeda t\u1eeb",
+        "description": "\u0110\u1ed9 nh\u1ea1y cho vi\u1ec7c s\u1eeda t\u1eeb t\u00f9y ch\u1ec9nh"
+      },
+      "historyLimit": {
+        "title": "Gi\u1edbi h\u1ea1n l\u1ecbch s\u1eed",
+        "description": "S\u1ed1 l\u01b0\u1ee3ng m\u1ee5c l\u1ecbch s\u1eed t\u1ed1i \u0111a c\u1ea7n gi\u1eef",
+        "entries": "m\u1ee5c"
+      },
+      "recordingRetention": {
+        "title": "T\u1ef1 \u0111\u1ed9ng x\u00f3a ghi \u00e2m",
+        "description": "T\u1ef1 \u0111\u1ed9ng x\u00f3a c\u00e1c b\u1ea3n ghi \u00e2m c\u0169 \u0111\u1ec3 ti\u1ebft ki\u1ec7m dung l\u01b0\u1ee3ng",
+        "never": "Kh\u00f4ng bao gi\u1edd",
+        "preserveLimit": "Gi\u1eef {{count}} b\u1ea3n m\u1edbi nh\u1ea5t",
+        "days3": "Sau 3 ng\u00e0y",
+        "weeks2": "Sau 2 tu\u1ea7n",
+        "months3": "Sau 3 th\u00e1ng",
+        "placeholder": "Ch\u1ecdn th\u1eddi gian l\u01b0u gi\u1eef..."
+      },
+      "alwaysOnMicrophone": {
+        "label": "Micr\u00f4 lu\u00f4n b\u1eadt",
+        "description": "Gi\u1eef micr\u00f4 ho\u1ea1t \u0111\u1ed9ng \u0111\u1ec3 ph\u1ea3n h\u1ed3i nhanh h\u01a1n"
+      },
+      "clamshellMicrophone": {
+        "title": "Micr\u00f4 ch\u1ebf \u0111\u1ed9 g\u1eadp",
+        "description": "Micr\u00f4 s\u1eed d\u1ee5ng khi n\u1eafp laptop \u0111\u01b0\u1ee3c \u0111\u00f3ng"
+      },
+      "postProcessingToggle": {
+        "label": "X\u1eed l\u00fd sau",
+        "description": "B\u1eadt tinh ch\u1ec9nh v\u0103n b\u1ea3n b\u1eb1ng AI sau khi chuy\u1ec3n \u0111\u1ed5i"
+      },
+      "muteWhileRecording": {
+        "label": "T\u1eaft ti\u1ebfng khi ghi \u00e2m",
+        "description": "T\u1eaft ti\u1ebfng \u00e2m thanh h\u1ec7 th\u1ed1ng trong khi ghi \u00e2m"
+      },
+      "appendTrailingSpace": {
+        "label": "Th\u00eam d\u1ea5u c\u00e1ch cu\u1ed1i",
+        "description": "Th\u00eam m\u1ed9t d\u1ea5u c\u00e1ch sau b\u1ea3n ghi \u0111\u00e3 d\u00e1n"
+      },
+      "paths": {
+        "appData": "D\u1eef li\u1ec7u \u1ee9ng d\u1ee5ng:",
+        "models": "Speech data:",
+        "settings": "C\u00e0i \u0111\u1eb7t:"
+      }
+    },
+    "about": {
+      "title": "Gi\u1edbi thi\u1ec7u",
+      "version": {
+        "title": "Phi\u00ean b\u1ea3n",
+        "description": "Phi\u00ean b\u1ea3n hi\u1ec7n t\u1ea1i c\u1ee7a BreezeType"
+      },
+      "appDataDirectory": {
+        "title": "Th\u01b0 m\u1ee5c d\u1eef li\u1ec7u \u1ee9ng d\u1ee5ng",
+        "description": "V\u1ecb tr\u00ed BreezeType l\u01b0u tr\u1eef d\u1eef li\u1ec7u"
+      },
+      "sourceCode": {
+        "title": "M\u00e3 ngu\u1ed3n",
+        "description": "Xem m\u00e3 ngu\u1ed3n v\u00e0 \u0111\u00f3ng g\u00f3p",
+        "button": "Xem tr\u00ean GitHub"
+      },
+      "supportDevelopment": {
+        "title": "H\u1ed7 tr\u1ee3 ph\u00e1t tri\u1ec3n",
+        "description": "Gi\u00fap ch\u00fang t\u00f4i ti\u1ebfp t\u1ee5c x\u00e2y d\u1ef1ng BreezeType",
+        "button": "Quy\u00ean g\u00f3p"
+      },
+      "acknowledgments": {
+        "title": "L\u1eddi c\u1ea3m \u01a1n",
+        "whisper": {
+          "title": "Local speech engine",
+          "description": "Choose how BreezeType should run transcript cleanup.",
+          "details": "BreezeType uses local speech processing for fast dictation."
+        }
+      }
+    }
+  },
+  "clipboardOverlay": {
+    "title": "Clipboard history",
+    "searchPlaceholder": "Search clipboard...",
+    "empty": "No clipboard items yet.",
+    "hint": "Enter to paste, Esc to close"
+  },
+  "footer": {
+    "downloadingModel": "Preparing BreezeType...",
+    "checkingUpdates": "\u0110ang ki\u1ec3m tra c\u1eadp nh\u1eadt...",
+    "updateAvailable": "C\u00f3 b\u1ea3n c\u1eadp nh\u1eadt: {{version}}",
+    "updateAvailableShort": "C\u00f3 b\u1ea3n c\u1eadp nh\u1eadt",
+    "upToDate": "\u0110\u00e3 c\u1eadp nh\u1eadt",
+    "downloadUpdate": "T\u1ea3i c\u1eadp nh\u1eadt",
+    "restart": "Kh\u1edfi \u0111\u1ed9ng l\u1ea1i",
+    "updateCheckingDisabled": "\u0110\u00e3 t\u1eaft ki\u1ec3m tra c\u1eadp nh\u1eadt",
+    "downloading": "\u0110ang t\u1ea3i... {{progress}}%",
+    "installing": "\u0110ang c\u00e0i \u0111\u1eb7t...",
+    "preparing": "\u0110ang chu\u1ea9n b\u1ecb...",
+    "checkForUpdates": "Ki\u1ec3m tra c\u1eadp nh\u1eadt"
+  },
+  "common": {
+    "loading": "\u0110ang t\u1ea3i...",
+    "save": "L\u01b0u",
+    "cancel": "H\u1ee7y",
+    "reset": "\u0110\u1eb7t l\u1ea1i",
+    "add": "Th\u00eam",
+    "remove": "X\u00f3a",
+    "delete": "X\u00f3a",
+    "edit": "Ch\u1ec9nh s\u1eeda",
+    "create": "T\u1ea1o",
+    "update": "C\u1eadp nh\u1eadt",
+    "close": "\u0110\u00f3ng",
+    "open": "M\u1edf",
+    "default": "M\u1eb7c \u0111\u1ecbnh",
+    "enabled": "\u0110\u00e3 b\u1eadt",
+    "disabled": "\u0110\u00e3 t\u1eaft",
+    "on": "B\u1eadt",
+    "off": "T\u1eaft",
+    "yes": "C\u00f3",
+    "no": "Kh\u00f4ng",
+    "noOptionsFound": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00f9y ch\u1ecdn",
+    "noResults": "No results",
+    "search": "Search",
+    "searchHistory": "Search history"
+  },
+  "accessibility": {
+    "permissionsRequired": "C\u1ea7n quy\u1ec1n truy c\u1eadp",
+    "permissionsDescription": "BreezeType c\u1ea7n quy\u1ec1n truy c\u1eadp \u0111\u1ec3 g\u00f5 v\u0103n b\u1ea3n \u0111\u00e3 chuy\u1ec3n \u0111\u1ed5i.",
+    "openSettings": "M\u1edf C\u00e0i \u0111\u1eb7t H\u1ec7 th\u1ed1ng",
+    "dismiss": "B\u1ecf qua"
+  },
+  "errors": {
+    "loadDirectory": "L\u1ed7i khi t\u1ea3i th\u01b0 m\u1ee5c: {{error}}"
+  },
+  "appLanguage": {
+    "title": "Ng\u00f4n ng\u1eef \u1ee9ng d\u1ee5ng",
+    "description": "Thay \u0111\u1ed5i ng\u00f4n ng\u1eef giao di\u1ec7n c\u1ee7a BreezeType"
+  },
+  "overlay": {
+    "transcribing": "\u0110ang chuy\u1ec3n \u0111\u1ed5i..."
+  },
+  "nav": {
+    "home": "Home",
+    "history": "Lịch sử giọng nói",
+    "clipboardHistory": "Lịch sử bảng nhớ tạm",
+    "dictionary": "Dictionary",
+    "snippets": "Snips",
+    "style": "Style",
+    "notes": "Notes",
+    "meetings": "Meetings",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "meetingsPage": {
+    "title": "Meetings",
+    "subtitle": "Capture mic + system audio for fast, local transcripts.",
+    "status": {
+      "recording": "Recording",
+      "ready": "Ready"
+    },
+    "nameLabel": "Meeting name (optional)",
+    "namePlaceholder": "Product sync, weekly standup\u2026",
+    "nameHint": "Leave blank to auto-name with the lightweight model.",
+    "includeSystemAudio": "Include system audio",
+    "includeSystemAudioHint": "Captures meeting audio from other apps. Turn off to record only your mic.",
+    "startButton": "Start recording",
+    "stopButton": "Stop & save",
+    "stopping": "Stopping...",
+    "recordingStarted": "Meeting recording started",
+    "recordingStopped": "Meeting saved",
+    "startError": "Couldn\u2019t start meeting recording.",
+    "stopError": "Couldn\u2019t finish the meeting recording.",
+    "download": "Download",
+    "downloaded": "Meeting downloaded",
+    "downloadError": "Couldn't download the meeting.",
+    "listTitle": "Recent meetings",
+    "count": "{{count}} total",
+    "loading": "Loading meetings...",
+    "emptyTitle": "No meetings yet",
+    "emptyBody": "Start recording to see your meetings here.",
+    "ended": "Ended {{time}}",
+    "durationLabel": "{{time}}",
+    "play": "Play",
+    "hidePlayer": "Hide player",
+    "audioLoading": "Loading audio...",
+    "audioError": "Couldn\u2019t load the meeting audio.",
+    "searchPlaceholder": "Search meetings",
+    "filter": "Filter",
+    "filterTitle": "Filter by tag",
+    "filterAll": "All tags",
+    "filterEmpty": "No tags set yet.",
+    "tagsLabel": "Tags",
+    "tagsPlaceholder": "Add a tag...",
+    "tagsEmpty": "No tags yet.",
+    "rename": "Rename",
+    "save": "Save",
+    "cancel": "Cancel",
+    "renameEmpty": "Meeting name can\u2019t be empty.",
+    "renameError": "Couldn\u2019t rename the meeting.",
+    "deleteError": "Couldn't delete the meeting.",
+    "refresh": "Refresh",
+    "source": {
+      "system": "System + mic",
+      "mic": "Mic only"
+    },
+    "back": "Back",
+    "notesTitle": "Notes",
+    "notesSubtitle": "Capture quick takeaways during the meeting.",
+    "notesCount": "{{count}} notes",
+    "notesPlaceholder": "Type a note and press Enter",
+    "notesEmpty": "No notes yet.",
+    "notesHint": "Click a transcript line to pin the note timestamp.",
+    "notesLoading": "Loading notes...",
+    "noteError": "Couldn't save the note.",
+    "transcriptTitle": "Transcript",
+    "transcriptCopy": "Copy transcript",
+    "transcriptCopied": "Transcript copied",
+    "transcriptCopyError": "Couldn't copy the transcript.",
+    "transcriptLoading": "Generating transcript...",
+    "transcriptEmpty": "No spoken words detected durring meeting.",
+    "transcriptError": "Couldn't load the transcript."
+  },
+  "meetingPrompt": {
+    "title": "Meeting starting",
+    "subtitle": "Detected in {{source}}",
+    "startButton": "Start recording",
+    "starting": "Starting...",
+    "dismiss": "Not now",
+    "startError": "Couldn't start meeting recording."
+  },
+  "home": {
+    "welcome": "Welcome back",
+    "subtitle": "Here's what your voice looks like today.",
+    "stats": {
+      "words": "words",
+      "wpm": "WPM",
+      "time": "time"
+    },
+    "hero": {
+      "title": "Make BreezeType sound like you",
+      "description": "BreezeType adapts to how you write across apps. Personalize your style for messages, work chats, emails, and more.",
+      "cta": "Start now"
+    },
+    "sections": {
+      "snippets": "Snips",
+      "history": "Daily history"
+    },
+    "snippets": {
+      "empty": "No snips yet."
+    },
+    "history": {
+      "today": "Today",
+      "empty": "No history yet.",
+      "copy": "Copy",
+      "copied": "Copied to clipboard",
+      "filter": "Filter",
+      "filterTitle": "Filter by app",
+      "filterAll": "All apps",
+      "filterEmpty": "No apps yet"
+    }
+  },
+  "notesPage": {
+    "title": "Notes",
+    "subtitle": "Capture ideas while you dictate.",
+    "newNote": "New note",
+    "empty": "No notes yet.",
+    "emptyBody": "Create a note to start capturing thoughts.",
+    "searchPlaceholder": "Search notes",
+    "titlePlaceholder": "Title",
+    "bodyPlaceholder": "Start talking to add notes...",
+    "untitled": "Untitled note",
+    "saving": "Saving...",
+    "saved": "Saved"
+  },
+  "dictionaryPage": {
+    "title": "Dictionary",
+    "subtitle": "Teach BreezeType the words you use most.",
+    "saving": "Saving...",
+    "entries": {
+      "title": "Dictionary entries",
+      "description": "Add terms and optional definitions to improve word correction.",
+      "empty": "No dictionary entries yet.",
+      "untitled": "Untitled term",
+      "helper": "Add a term and optional definition.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "termLabel": "Term",
+      "termPlaceholder": "Acme CRM",
+      "definitionLabel": "Definition",
+      "definitionPlaceholder": "Internal customer platform",
+      "searchPlaceholder": "Search dictionary",
+      "addTitle": "Add term",
+      "addSubtitle": "Add a term and optional definition.",
+      "create": "Create term"
+    }
+  },
+  "placeholders": {
+    "dictionary": "Your custom terminology and definitions will appear here.",
+    "snippets": "Reusable snips and saved phrases will appear here.",
+    "style": "Tune tone and formatting preferences here.",
+    "notes": "Capture quick notes from your dictation history.",
+    "help": "Tips and support resources will live here."
+  },
+  "help": {
+    "title": "Help",
+    "subtitle": "Quick diagnostics for BreezeType.",
+    "status": {
+      "ready": "Ready",
+      "loading": "Loading",
+      "issue": "Issue"
+    },
+    "tutorial": {
+      "open": "Tutorial",
+      "title": "Tutorial",
+      "subtitle": "A guided practice for dictation, clipboard history, tasks, and meeting recordings.",
+      "cardTitle": "Tutorial",
+      "cardSubtitle": "Practice dictation, clipboard history, tasks, and meeting recordings.",
+      "skip": "Skip",
+      "previous": "Previous",
+      "next": "Next",
+      "stepStatus": "Step {{current}} of {{total}}",
+      "reminder": "This tutorial is always available in the Help area.",
+      "steps": {
+        "dictation": {
+          "eyebrow": "Dictation",
+          "title": "Speak once",
+          "description": "Use your current shortcut, read one phrase, and watch BreezeType place the text.",
+          "action": "Try dictation"
+        },
+        "clipboard": {
+          "eyebrow": "Clipboard history",
+          "title": "Find and paste",
+          "description": "Copy two snippets, then practice pulling them back with the clipboard manager.",
+          "action": "Try clipboard history"
+        },
+        "tasks": {
+          "eyebrow": "Tasks",
+          "title": "Capture next steps",
+          "description": "Open Quick Task, type a natural-language task, and see how BreezeType reads it.",
+          "action": "Try quick task"
+        },
+        "meetings": {
+          "eyebrow": "Meeting recordings",
+          "title": "Record and review",
+          "description": "Record the call you are already in. BreezeType transcribes locally without adding a bot.",
+          "action": "Start a meeting recording"
+        },
+        "finish": {
+          "eyebrow": "All set",
+          "title": "You are ready",
+          "description": "You have the core BreezeType loop: speak, reuse clips, capture tasks, and record meetings.",
+          "action": "Start using BreezeType"
+        }
+      }
+    },
+    "issue": {
+      "title": "Current issue",
+      "description": "If something is wrong, you\u2019ll see it here.",
+      "none": "No issues detected."
+    },
+    "permissions": {
+      "title": "Quy\u1ec1n",
+      "subtitle": "Ki\u1ec3m tra c\u00e1c quy\u1ec1n h\u1ec7 th\u1ed1ng c\u1ea7n thi\u1ebft.",
+      "refresh": "L\u00e0m m\u1edbi",
+      "notSupported": "Ch\u1ec9 macOS m\u1edbi h\u1ed7 tr\u1ee3 ki\u1ec3m tra quy\u1ec1n.",
+      "status": {
+        "on": "B\u1eadt",
+        "off": "T\u1eaft",
+        "checking": "\u0110ang ki\u1ec3m tra...",
+        "error": "Kh\u00f4ng kh\u1ea3 d\u1ee5ng"
+      },
+      "items": {
+        "accessibility": "Tr\u1ee3 n\u0103ng",
+        "microphone": "Micro",
+        "screenRecording": "Ghi m\u00e0n h\u00ecnh",
+        "inputMonitoring": "Gi\u00e1m s\u00e1t nh\u1eadp li\u1ec7u"
+      }
+    }
+  },
+  "commandsPage": {
+    "title": "Snips",
+    "subtitle": "Create voice commands that trigger actions.",
+    "saving": "Saving...",
+    "status": {
+      "unsaved": "Unsaved changes"
+    },
+    "open": {
+      "title": "Open",
+      "description": "Say \u201copen <phrase>\u201d to launch apps. Targets can be app names or full paths.",
+      "phraseLabel": "Spoken phrase",
+      "phrasePlaceholder": "calendar",
+      "targetLabel": "App name or path",
+      "targetPlaceholder": "Calendar or /Applications/Calendar.app",
+      "empty": "No open commands yet."
+    },
+    "errors": {
+      "load": "Failed to load commands",
+      "save": "Failed to save commands"
+    },
+    "takeNote": {
+      "title": "Take note",
+      "description": "Say a quick phrase to open Notes and keep dictating into a new note.",
+      "examplesLabel": "Examples",
+      "example1": "Take note",
+      "example2": "Take note project kickoff ideas",
+      "example3": "Take a note meeting follow-ups"
+    },
+    "snippets": {
+      "title": "Snips",
+      "description": "Reusable expansions you can trigger by voice or typing.",
+      "empty": "No snips yet.",
+      "untitled": "Untitled snippet",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "idLabel": "Snippet ID",
+      "idPlaceholder": "support_intro",
+      "triggersLabel": "Triggers (comma separated)",
+      "triggersPlaceholder": "support intro, help me",
+      "templateLabel": "Template",
+      "templatePlaceholder": "Thanks for reaching out...",
+      "variablesLabel": "Variables: {{variables}}",
+      "helper": "Short trigger phrases that expand into the template.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "addTrigger": "Add trigger",
+      "removeTrigger": "Remove trigger",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "What this snippet does",
+      "searchPlaceholder": "Search snips",
+      "addTitle": "Add snippet",
+      "addSubtitle": "Define triggers and the text that should expand.",
+      "create": "Create snippet"
+    }
+  }
+}

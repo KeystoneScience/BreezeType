@@ -1,0 +1,745 @@
+{
+  "tray": {
+    "settings": "Ustawienia...",
+    "checkUpdates": "Sprawd\u017a aktualizacje...",
+    "startMeetingRecording": "Rozpocznij nagrywanie spotkania",
+    "stopMeetingRecording": "Zatrzymaj nagrywanie spotkania",
+    "createTask": "Create task",
+    "quit": "Zamknij",
+    "cancel": "Anuluj"
+  },
+  "sidebar": {
+    "general": "Og\u00f3lne",
+    "advanced": "Zaawansowane",
+    "postProcessing": "Postproces",
+    "history": "Historia",
+    "debug": "Debugowanie",
+    "about": "O programie"
+  },
+  "onboarding": {
+    "subtitle": "BreezeType is getting ready.",
+    "recommended": "Polecane",
+    "download": "Pobierz",
+    "downloading": "Pobieranie...",
+    "modelCard": {
+      "accuracy": "dok\u0142adno\u015b\u0107",
+      "speed": "szybko\u015b\u0107"
+    },
+    "models": {
+      "small": {
+        "name": "BreezeType setup",
+        "description": "Szybki i do\u015b\u0107 dok\u0142adny."
+      },
+      "medium": {
+        "name": "BreezeType setup",
+        "description": "Dobra dok\u0142adno\u015b\u0107, \u015brednia szybko\u015b\u0107"
+      },
+      "turbo": {
+        "name": "BreezeType setup",
+        "description": "Zr\u00f3wnowa\u017cona dok\u0142adno\u015b\u0107 i szybko\u015b\u0107."
+      },
+      "large": {
+        "name": "BreezeType setup",
+        "description": "Dobra dok\u0142adno\u015b\u0107, ale wolny."
+      },
+      "parakeet-tdt-0.6b-v3": {
+        "name": "BreezeType setup",
+        "description": "Szybki i dok\u0142adny"
+      }
+    },
+    "errors": {
+      "loadModels": "BreezeType couldn't finish getting ready. Please try again.",
+      "downloadModel": "BreezeType couldn't finish setup. Please check your connection and try again."
+    }
+  },
+  "modelSelector": {
+    "welcome": "Witamy w BreezeType!",
+    "downloadPrompt": "BreezeType needs a quick one-time setup before dictation is ready.",
+    "availableModels": "Ready",
+    "downloadModels": "Set Up BreezeType",
+    "chooseModel": "Set Up BreezeType",
+    "active": "Aktywny",
+    "download": "Pobierz",
+    "downloadSize": "Required download",
+    "noModelsAvailable": "BreezeType setup is not available right now.",
+    "readyOptionTitle": "Ready",
+    "readyOptionDescription": "BreezeType is ready for local dictation.",
+    "setupOptionTitle": "BreezeType setup",
+    "setupOptionDescription": "Required for fast local dictation.",
+    "deleteError": "BreezeType could not remove that download. Please try again.",
+    "extracting": "Finishing setup...",
+    "extractingMultiple": "Finishing setup...",
+    "extractingGeneric": "Finishing setup...",
+    "downloading": "Pobieranie {{percentage}}%",
+    "downloadingMultiple": "Downloading...",
+    "modelReady": "Ready",
+    "loading": "Getting ready...",
+    "loadingGeneric": "Getting ready...",
+    "modelError": "BreezeType needs attention. Please try again.",
+    "modelUnloaded": "Ready",
+    "noModelDownloadRequired": "Setup required",
+    "deleteModel": "Remove offline data",
+    "statusReady": "Gotowe",
+    "statusLoading": "Getting ready",
+    "statusIssue": "Needs attention"
+  },
+  "settings": {
+    "general": {
+      "title": "Og\u00f3lne",
+      "shortcut": {
+        "title": "Skr\u00f3ty BreezeType",
+        "description": "Skonfiguruj skr\u00f3ty klawiaturowe do uruchamiania nagrywania mowy",
+        "loading": "Wczytywanie skr\u00f3t\u00f3w...",
+        "none": "Brak skonfigurowanych skr\u00f3t\u00f3w",
+        "notFound": "Nie znaleziono skr\u00f3tu",
+        "pressKeys": "Naci\u015bnij klawisze...",
+        "bindings": {
+          "transcribe": {
+            "name": "Transkrybuj",
+            "description": "Konwertuje Twoj\u0105 mow\u0119 na tekst."
+          },
+          "cancel": {
+            "name": "Anuluj",
+            "description": "Anuluje bie\u017c\u0105ce nagrywanie."
+          },
+          "clipboard_history": {
+            "name": "Clipboard history",
+            "description": "Opens the clipboard history picker."
+          }
+        },
+        "errors": {
+          "restore": "Nie uda\u0142o si\u0119 przywr\u00f3ci\u0107 oryginalnego skr\u00f3tu",
+          "set": "Nie uda\u0142o si\u0119 ustawi\u0107 skr\u00f3tu: {{error}}",
+          "reset": "Nie uda\u0142o si\u0119 zresetowa\u0107 skr\u00f3tu do warto\u015bci domy\u015blnej"
+        }
+      },
+      "language": {
+        "title": "J\u0119zyk",
+        "description": "Wybierz j\u0119zyk rozpoznawania mowy. Opcja Auto automatycznie okre\u015bli j\u0119zyk, a wyb\u00f3r konkretnego j\u0119zyka mo\u017ce poprawi\u0107 dok\u0142adno\u015b\u0107.",
+        "descriptionUnsupported": "BreezeType automatically detects the language. No manual selection is needed.",
+        "searchPlaceholder": "Szukaj j\u0119zyka...",
+        "noResults": "Nie znaleziono j\u0119zyk\u00f3w",
+        "auto": "Auto"
+      },
+      "pushToTalk": {
+        "label": "Push To Talk",
+        "description": "Przytrzymaj, aby nagrywa\u0107, pu\u015b\u0107, aby zatrzyma\u0107"
+      },
+      "theme": {
+        "title": "Theme",
+        "description": "Choose light or dark mode, or follow the system setting.",
+        "options": {
+          "system": "System (Default)",
+          "light": "Light",
+          "dark": "Dark"
+        }
+      }
+    },
+    "sound": {
+      "title": "D\u017awi\u0119k",
+      "microphone": {
+        "title": "Mikrofon",
+        "description": "Wybierz preferowane urz\u0105dzenie mikrofonowe",
+        "placeholder": "Wybierz mikrofon...",
+        "loading": "Wczytywanie..."
+      },
+      "audioFeedback": {
+        "label": "Informacja d\u017awi\u0119kowa",
+        "description": "Odtwarzaj d\u017awi\u0119k przy rozpocz\u0119ciu i zako\u0144czeniu nagrywania"
+      },
+      "outputDevice": {
+        "title": "Urz\u0105dzenie wyj\u015bciowe",
+        "description": "Wybierz preferowane urz\u0105dzenie audio do odtwarzania d\u017awi\u0119k\u00f3w",
+        "placeholder": "Wybierz urz\u0105dzenie wyj\u015bciowe...",
+        "loading": "Wczytywanie..."
+      },
+      "volume": {
+        "title": "G\u0142o\u015bno\u015b\u0107",
+        "description": "Dostosuj g\u0142o\u015bno\u015b\u0107 d\u017awi\u0119k\u00f3w informacyjnych"
+      }
+    },
+    "advanced": {
+      "title": "Zaawansowane",
+      "startHidden": {
+        "label": "Uruchom ukryty",
+        "description": "Uruchom w zasobniku systemowym bez otwierania okna."
+      },
+      "autostart": {
+        "label": "Uruchamiaj przy starcie",
+        "description": "Automatycznie uruchamiaj BreezeType po zalogowaniu."
+      },
+      "overlay": {
+        "title": "Pozycja nak\u0142adki",
+        "description": "Wy\u015bwietlaj wizualn\u0105 nak\u0142adk\u0119 podczas nagrywania i transkrypcji. Na Linuxie zalecane 'Brak'.",
+        "options": {
+          "none": "Brak",
+          "bottom": "D\u00f3\u0142",
+          "top": "G\u00f3ra"
+        }
+      },
+      "meetingDetection": {
+        "label": "Meeting detection",
+        "description": "Show a small prompt when a meeting app or tab becomes active."
+      },
+      "pasteMethod": {
+        "title": "Metoda wklejania",
+        "description": "Wybierz spos\u00f3b wstawiania tekstu. Direct: symuluje wpisywanie. None: pomija wklejanie, tylko aktualizuje histori\u0119/clipboard.",
+        "options": {
+          "clipboard": "Schowek ({{modifier}}+V)",
+          "clipboardCtrlShiftV": "Schowek (Ctrl+Shift+V)",
+          "clipboardShiftInsert": "Schowek (Shift+Insert)",
+          "direct": "Bezpo\u015brednio",
+          "none": "Brak"
+        }
+      },
+      "clipboardHandling": {
+        "title": "Obs\u0142uga schowka",
+        "description": "Nie modyfikuj schowka zachowuje jego zawarto\u015b\u0107. Kopiuj do schowka pozostawia wynik transkrypcji w schowku.",
+        "options": {
+          "dontModify": "Nie modyfikuj schowka",
+          "copyToClipboard": "Kopiuj do schowka"
+        }
+      },
+      "translateToEnglish": {
+        "label": "T\u0142umacz na angielski",
+        "description": "Automatycznie t\u0142umacz mow\u0119 z innych j\u0119zyk\u00f3w na angielski podczas transkrypcji.",
+        "descriptionUnsupported": "Translation is not available with the current speech setup."
+      },
+      "modelUnload": {
+        "title": "Release Speech Resources",
+        "description": "Automatically free local speech resources after BreezeType has been idle for the specified time.",
+        "options": {
+          "never": "Nigdy",
+          "immediately": "Natychmiast",
+          "min2": "Po 2 minutach",
+          "min5": "Po 5 minutach",
+          "min10": "Po 10 minutach",
+          "min15": "Po 15 minutach",
+          "hour1": "Po 1 godzinie",
+          "sec5": "Po 5 sekundach (Debug)"
+        }
+      },
+      "customWords": {
+        "title": "W\u0142asne s\u0142owa",
+        "description": "Dodaj s\u0142owa, kt\u00f3re cz\u0119sto s\u0105 \u017ale rozpoznawane lub zapisywane podczas transkrypcji. System automatycznie poprawi podobnie brzmi\u0105ce s\u0142owa, aby pasowa\u0142y do Twojej listy.",
+        "placeholder": "Dodaj s\u0142owo",
+        "add": "Dodaj",
+        "remove": "Usu\u0144 {{word}}"
+      }
+    },
+    "postProcessing": {
+      "title": "Postprocess",
+      "disabledNotice": "Postprocess jest obecnie wy\u0142\u0105czony. W\u0142\u0105cz go w ustawieniach Debug, aby skonfigurowa\u0107.",
+      "api": {
+        "title": "Cleanup connection",
+        "provider": {
+          "title": "Dostawca",
+          "description": "Choose how BreezeType should run transcript cleanup."
+        },
+        "appleIntelligence": {
+          "title": "Apple Intelligence",
+          "description": "Dzia\u0142a ca\u0142kowicie na urz\u0105dzeniu. Nie wymaga klucza API ani dost\u0119pu do sieci.",
+          "requirements": "Wymaga komputera Mac z Apple Silicon i systemem macOS Tahoe (26.0) lub nowszym. Apple Intelligence musi by\u0107 w\u0142\u0105czone w Ustawieniach systemowych."
+        },
+        "baseUrl": {
+          "title": "Custom connection",
+          "description": "Connection address for custom cleanup setups.",
+          "placeholder": "Connection address"
+        },
+        "apiKey": {
+          "title": "Connection key",
+          "description": "Private key for the selected cleanup connection.",
+          "placeholder": "Paste key"
+        },
+        "model": {
+          "title": "Cleanup option",
+          "descriptionApple": "Podaj opcjonalny limit token\u00f3w lub pozostaw domy\u015blne ustawienie urz\u0105dzenia.",
+          "descriptionCustom": "Provide the cleanup option expected by your custom endpoint.",
+          "descriptionDefault": "Choose a cleanup option exposed by the selected connection.",
+          "placeholderApple": "Apple Intelligence",
+          "placeholderWithOptions": "Search or select an option",
+          "placeholderNoOptions": "Type an option name",
+          "refreshModels": "Refresh options"
+        }
+      },
+      "prompts": {
+        "title": "Prompt",
+        "selectedPrompt": {
+          "title": "Wybrany prompt",
+          "description": "Wybierz szablon do ulepszania transkrypcji lub utw\u00f3rz nowy. U\u017cyj ${output} w tre\u015bci, aby odwo\u0142a\u0107 si\u0119 do przechwyconej transkrypcji."
+        },
+        "noPrompts": "Brak dost\u0119pnych prompt\u00f3w",
+        "selectPrompt": "Wybierz prompt",
+        "createNew": "Utw\u00f3rz nowy prompt",
+        "promptLabel": "Etykieta promptu",
+        "promptLabelPlaceholder": "Wpisz nazw\u0119 promptu",
+        "promptInstructions": "Instrukcje promptu",
+        "promptInstructionsPlaceholder": "Wpisz instrukcje do wykonania po transkrypcji. Przyk\u0142ad: Popraw gramatyk\u0119 i jasno\u015b\u0107 dla nast\u0119puj\u0105cego tekstu: ${output}",
+        "promptTip": "Wskaz\u00f3wka: u\u017cyj <code>${output}</code>, aby wstawi\u0107 transkrybowany tekst do promptu.",
+        "updatePrompt": "Zaktualizuj prompt",
+        "deletePrompt": "Usu\u0144 prompt",
+        "createPrompt": "Utw\u00f3rz prompt",
+        "cancel": "Anuluj",
+        "selectToEdit": "Wybierz prompt powy\u017cej, aby zobaczy\u0107 i edytowa\u0107 jego szczeg\u00f3\u0142y.",
+        "createFirst": "Kliknij 'Utw\u00f3rz nowy prompt' powy\u017cej, aby utworzy\u0107 pierwszy prompt postprocessingu."
+      }
+    },
+    "history": {
+      "title": "Historia",
+      "openFolder": "Otw\u00f3rz folder nagra\u0144",
+      "loading": "Wczytywanie historii...",
+      "empty": "Brak transkrypcji. Rozpocznij nagrywanie, aby zbudowa\u0107 histori\u0119!",
+      "copyToClipboard": "Kopiuj transkrypcj\u0119 do schowka",
+      "save": "Zapisz transkrypcj\u0119",
+      "unsave": "Usu\u0144 z zapisanych",
+      "delete": "Usu\u0144 wpis",
+      "deleteError": "Nie uda\u0142o si\u0119 usun\u0105\u0107 wpisu. Spr\u00f3buj ponownie."
+    },
+    "debug": {
+      "title": "Debugowanie",
+      "logDirectory": {
+        "title": "Katalog log\u00f3w",
+        "description": "Miejsce przechowywania plik\u00f3w log\u00f3w"
+      },
+      "logLevel": {
+        "title": "Poziom log\u00f3w",
+        "description": "Ustaw poziom szczeg\u00f3\u0142owo\u015bci logowania"
+      },
+      "updateChecks": {
+        "label": "Sprawdzaj aktualizacje",
+        "description": "Automatycznie sprawdzaj nowe wersje BreezeType"
+      },
+      "soundTheme": {
+        "label": "Motyw d\u017awi\u0119kowy",
+        "description": "Wybierz motyw d\u017awi\u0119kowy dla informacji o rozpocz\u0119ciu i zako\u0144czeniu nagrywania"
+      },
+      "wordCorrectionThreshold": {
+        "title": "Pr\u00f3g korekty s\u0142\u00f3w",
+        "description": "Czu\u0142o\u015b\u0107 dla w\u0142asnych korekt s\u0142\u00f3w"
+      },
+      "historyLimit": {
+        "title": "Limit historii",
+        "description": "Maksymalna liczba wpis\u00f3w w historii",
+        "entries": "wpisy"
+      },
+      "recordingRetention": {
+        "title": "Automatyczne usuwanie nagra\u0144",
+        "description": "Automatycznie usuwaj stare nagrania, aby zaoszcz\u0119dzi\u0107 miejsce",
+        "never": "Nigdy",
+        "preserveLimit": "Zachowaj ostatnie {{count}}",
+        "days3": "Po 3 dniach",
+        "weeks2": "Po 2 tygodniach",
+        "months3": "Po 3 miesi\u0105cach",
+        "placeholder": "Wybierz okres retencji..."
+      },
+      "alwaysOnMicrophone": {
+        "label": "Mikrofon zawsze aktywny",
+        "description": "Utrzymuj mikrofon aktywny dla szybszej reakcji"
+      },
+      "clamshellMicrophone": {
+        "title": "Mikrofon przy zamkni\u0119tej pokrywie",
+        "description": "Mikrofon u\u017cywany, gdy pokrywa laptopa jest zamkni\u0119ta"
+      },
+      "postProcessingToggle": {
+        "label": "Postprocess",
+        "description": "W\u0142\u0105cz AI do ulepszania tekstu po transkrypcji"
+      },
+      "muteWhileRecording": {
+        "label": "Wycisz podczas nagrywania",
+        "description": "Wycisz d\u017awi\u0119k systemu podczas nagrywania"
+      },
+      "appendTrailingSpace": {
+        "label": "Dodaj spacj\u0119 na ko\u0144cu",
+        "description": "Dodaj spacj\u0119 po wklejonej transkrypcji"
+      },
+      "paths": {
+        "appData": "Dane aplikacji:",
+        "models": "Speech data:",
+        "settings": "Ustawienia:"
+      }
+    },
+    "about": {
+      "title": "O programie",
+      "version": {
+        "title": "Wersja",
+        "description": "Aktualna wersja BreezeType"
+      },
+      "appDataDirectory": {
+        "title": "Katalog danych aplikacji",
+        "description": "Miejsce, gdzie BreezeType przechowuje swoje dane"
+      },
+      "sourceCode": {
+        "title": "Kod \u017ar\u00f3d\u0142owy",
+        "description": "Zobacz kod \u017ar\u00f3d\u0142owy i wsp\u00f3\u0142tw\u00f3rz",
+        "button": "Zobacz na GitHub"
+      },
+      "supportDevelopment": {
+        "title": "Wspieraj rozw\u00f3j",
+        "description": "Pom\u00f3\u017c nam dalej rozwija\u0107 BreezeType",
+        "button": "Wesprzyj"
+      },
+      "acknowledgments": {
+        "title": "Podzi\u0119kowania",
+        "whisper": {
+          "title": "Local speech engine",
+          "description": "Choose how BreezeType should run transcript cleanup.",
+          "details": "BreezeType uses local speech processing for fast dictation."
+        }
+      }
+    }
+  },
+  "clipboardOverlay": {
+    "title": "Clipboard history",
+    "searchPlaceholder": "Search clipboard...",
+    "empty": "No clipboard items yet.",
+    "hint": "Enter to paste, Esc to close"
+  },
+  "footer": {
+    "downloadingModel": "Preparing BreezeType...",
+    "checkingUpdates": "Sprawdzanie aktualizacji...",
+    "updateAvailable": "Dost\u0119pna aktualizacja: {{version}}",
+    "updateAvailableShort": "Dost\u0119pna aktualizacja",
+    "upToDate": "Aktualne",
+    "downloadUpdate": "Pobierz aktualizacj\u0119",
+    "restart": "Uruchom ponownie",
+    "updateCheckingDisabled": "Sprawdzanie aktualizacji wy\u0142\u0105czone",
+    "downloading": "Pobieranie... {{progress}}%",
+    "installing": "Instalowanie...",
+    "preparing": "Przygotowywanie...",
+    "checkForUpdates": "Sprawd\u017a aktualizacje"
+  },
+  "common": {
+    "loading": "Wczytywanie...",
+    "save": "Zapisz",
+    "cancel": "Anuluj",
+    "reset": "Resetuj",
+    "add": "Dodaj",
+    "remove": "Usu\u0144",
+    "delete": "Usu\u0144",
+    "edit": "Edytuj",
+    "create": "Utw\u00f3rz",
+    "update": "Aktualizuj",
+    "close": "Zamknij",
+    "open": "Otw\u00f3rz",
+    "default": "Domy\u015blne",
+    "enabled": "W\u0142\u0105czone",
+    "disabled": "Wy\u0142\u0105czone",
+    "on": "W\u0142\u0105cz",
+    "off": "Wy\u0142\u0105cz",
+    "yes": "Tak",
+    "no": "Nie",
+    "noOptionsFound": "Nie znaleziono opcji",
+    "noResults": "No results",
+    "search": "Search",
+    "searchHistory": "Search history"
+  },
+  "accessibility": {
+    "permissionsRequired": "Wymagane uprawnienia dost\u0119pno\u015bci",
+    "permissionsDescription": "BreezeType potrzebuje uprawnie\u0144 dost\u0119pno\u015bci, aby wpisywa\u0107 transkrybowany tekst.",
+    "openSettings": "Otw\u00f3rz ustawienia systemowe",
+    "dismiss": "Zamknij"
+  },
+  "errors": {
+    "loadDirectory": "B\u0142\u0105d wczytywania katalogu: {{error}}"
+  },
+  "appLanguage": {
+    "title": "J\u0119zyk aplikacji",
+    "description": "Zmie\u0144 j\u0119zyk interfejsu BreezeType"
+  },
+  "overlay": {
+    "transcribing": "Transkrypcja..."
+  },
+  "nav": {
+    "home": "Home",
+    "history": "Historia głosu",
+    "clipboardHistory": "Historia schowka",
+    "dictionary": "Dictionary",
+    "snippets": "Snips",
+    "style": "Style",
+    "notes": "Notes",
+    "meetings": "Meetings",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "meetingsPage": {
+    "title": "Meetings",
+    "subtitle": "Capture mic + system audio for fast, local transcripts.",
+    "status": {
+      "recording": "Recording",
+      "ready": "Ready"
+    },
+    "nameLabel": "Meeting name (optional)",
+    "namePlaceholder": "Product sync, weekly standup\u2026",
+    "nameHint": "Leave blank to auto-name with the lightweight model.",
+    "includeSystemAudio": "Include system audio",
+    "includeSystemAudioHint": "Captures meeting audio from other apps. Turn off to record only your mic.",
+    "startButton": "Start recording",
+    "stopButton": "Stop & save",
+    "stopping": "Stopping...",
+    "recordingStarted": "Meeting recording started",
+    "recordingStopped": "Meeting saved",
+    "startError": "Couldn\u2019t start meeting recording.",
+    "stopError": "Couldn\u2019t finish the meeting recording.",
+    "download": "Download",
+    "downloaded": "Meeting downloaded",
+    "downloadError": "Couldn't download the meeting.",
+    "listTitle": "Recent meetings",
+    "count": "{{count}} total",
+    "loading": "Loading meetings...",
+    "emptyTitle": "No meetings yet",
+    "emptyBody": "Start recording to see your meetings here.",
+    "ended": "Ended {{time}}",
+    "durationLabel": "{{time}}",
+    "play": "Play",
+    "hidePlayer": "Hide player",
+    "audioLoading": "Loading audio...",
+    "audioError": "Couldn\u2019t load the meeting audio.",
+    "searchPlaceholder": "Search meetings",
+    "filter": "Filter",
+    "filterTitle": "Filter by tag",
+    "filterAll": "All tags",
+    "filterEmpty": "No tags set yet.",
+    "tagsLabel": "Tags",
+    "tagsPlaceholder": "Add a tag...",
+    "tagsEmpty": "No tags yet.",
+    "rename": "Rename",
+    "save": "Save",
+    "cancel": "Cancel",
+    "renameEmpty": "Meeting name can\u2019t be empty.",
+    "renameError": "Couldn\u2019t rename the meeting.",
+    "deleteError": "Couldn't delete the meeting.",
+    "refresh": "Refresh",
+    "source": {
+      "system": "System + mic",
+      "mic": "Mic only"
+    },
+    "back": "Back",
+    "notesTitle": "Notes",
+    "notesSubtitle": "Capture quick takeaways during the meeting.",
+    "notesCount": "{{count}} notes",
+    "notesPlaceholder": "Type a note and press Enter",
+    "notesEmpty": "No notes yet.",
+    "notesHint": "Click a transcript line to pin the note timestamp.",
+    "notesLoading": "Loading notes...",
+    "noteError": "Couldn't save the note.",
+    "transcriptTitle": "Transcript",
+    "transcriptCopy": "Copy transcript",
+    "transcriptCopied": "Transcript copied",
+    "transcriptCopyError": "Couldn't copy the transcript.",
+    "transcriptLoading": "Generating transcript...",
+    "transcriptEmpty": "No spoken words detected durring meeting.",
+    "transcriptError": "Couldn't load the transcript."
+  },
+  "meetingPrompt": {
+    "title": "Meeting starting",
+    "subtitle": "Detected in {{source}}",
+    "startButton": "Start recording",
+    "starting": "Starting...",
+    "dismiss": "Not now",
+    "startError": "Couldn't start meeting recording."
+  },
+  "home": {
+    "welcome": "Welcome back",
+    "subtitle": "Here's what your voice looks like today.",
+    "stats": {
+      "words": "words",
+      "wpm": "WPM",
+      "time": "time"
+    },
+    "hero": {
+      "title": "Make BreezeType sound like you",
+      "description": "BreezeType adapts to how you write across apps. Personalize your style for messages, work chats, emails, and more.",
+      "cta": "Start now"
+    },
+    "sections": {
+      "snippets": "Snips",
+      "history": "Daily history"
+    },
+    "snippets": {
+      "empty": "No snips yet."
+    },
+    "history": {
+      "today": "Today",
+      "empty": "No history yet.",
+      "copy": "Copy",
+      "copied": "Copied to clipboard",
+      "filter": "Filter",
+      "filterTitle": "Filter by app",
+      "filterAll": "All apps",
+      "filterEmpty": "No apps yet"
+    }
+  },
+  "notesPage": {
+    "title": "Notes",
+    "subtitle": "Capture ideas while you dictate.",
+    "newNote": "New note",
+    "empty": "No notes yet.",
+    "emptyBody": "Create a note to start capturing thoughts.",
+    "searchPlaceholder": "Search notes",
+    "titlePlaceholder": "Title",
+    "bodyPlaceholder": "Start talking to add notes...",
+    "untitled": "Untitled note",
+    "saving": "Saving...",
+    "saved": "Saved"
+  },
+  "dictionaryPage": {
+    "title": "Dictionary",
+    "subtitle": "Teach BreezeType the words you use most.",
+    "saving": "Saving...",
+    "entries": {
+      "title": "Dictionary entries",
+      "description": "Add terms and optional definitions to improve word correction.",
+      "empty": "No dictionary entries yet.",
+      "untitled": "Untitled term",
+      "helper": "Add a term and optional definition.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "termLabel": "Term",
+      "termPlaceholder": "Acme CRM",
+      "definitionLabel": "Definition",
+      "definitionPlaceholder": "Internal customer platform",
+      "searchPlaceholder": "Search dictionary",
+      "addTitle": "Add term",
+      "addSubtitle": "Add a term and optional definition.",
+      "create": "Create term"
+    }
+  },
+  "placeholders": {
+    "dictionary": "Your custom terminology and definitions will appear here.",
+    "snippets": "Reusable snips and saved phrases will appear here.",
+    "style": "Tune tone and formatting preferences here.",
+    "notes": "Capture quick notes from your dictation history.",
+    "help": "Tips and support resources will live here."
+  },
+  "help": {
+    "title": "Help",
+    "subtitle": "Quick diagnostics for BreezeType.",
+    "status": {
+      "ready": "Ready",
+      "loading": "Loading",
+      "issue": "Issue"
+    },
+    "tutorial": {
+      "open": "Tutorial",
+      "title": "Tutorial",
+      "subtitle": "A guided practice for dictation, clipboard history, tasks, and meeting recordings.",
+      "cardTitle": "Tutorial",
+      "cardSubtitle": "Practice dictation, clipboard history, tasks, and meeting recordings.",
+      "skip": "Skip",
+      "previous": "Previous",
+      "next": "Next",
+      "stepStatus": "Step {{current}} of {{total}}",
+      "reminder": "This tutorial is always available in the Help area.",
+      "steps": {
+        "dictation": {
+          "eyebrow": "Dictation",
+          "title": "Speak once",
+          "description": "Use your current shortcut, read one phrase, and watch BreezeType place the text.",
+          "action": "Try dictation"
+        },
+        "clipboard": {
+          "eyebrow": "Clipboard history",
+          "title": "Find and paste",
+          "description": "Copy two snippets, then practice pulling them back with the clipboard manager.",
+          "action": "Try clipboard history"
+        },
+        "tasks": {
+          "eyebrow": "Tasks",
+          "title": "Capture next steps",
+          "description": "Open Quick Task, type a natural-language task, and see how BreezeType reads it.",
+          "action": "Try quick task"
+        },
+        "meetings": {
+          "eyebrow": "Meeting recordings",
+          "title": "Record and review",
+          "description": "Record the call you are already in. BreezeType transcribes locally without adding a bot.",
+          "action": "Start a meeting recording"
+        },
+        "finish": {
+          "eyebrow": "All set",
+          "title": "You are ready",
+          "description": "You have the core BreezeType loop: speak, reuse clips, capture tasks, and record meetings.",
+          "action": "Start using BreezeType"
+        }
+      }
+    },
+    "issue": {
+      "title": "Current issue",
+      "description": "If something is wrong, you\u2019ll see it here.",
+      "none": "No issues detected."
+    },
+    "permissions": {
+      "title": "Uprawnienia",
+      "subtitle": "Sprawd\u017a wymagane uprawnienia systemowe.",
+      "refresh": "Od\u015bwie\u017c",
+      "notSupported": "Sprawdzanie uprawnie\u0144 jest dost\u0119pne tylko w systemie macOS.",
+      "status": {
+        "on": "W\u0142\u0105czone",
+        "off": "Wy\u0142\u0105czone",
+        "checking": "Sprawdzanie...",
+        "error": "Niedost\u0119pne"
+      },
+      "items": {
+        "accessibility": "U\u0142atwienia dost\u0119pu",
+        "microphone": "Mikrofon",
+        "screenRecording": "Nagrywanie ekranu",
+        "inputMonitoring": "Monitorowanie wej\u015bcia"
+      }
+    }
+  },
+  "commandsPage": {
+    "title": "Snips",
+    "subtitle": "Create voice commands that trigger actions.",
+    "saving": "Saving...",
+    "status": {
+      "unsaved": "Unsaved changes"
+    },
+    "open": {
+      "title": "Open",
+      "description": "Say \u201copen <phrase>\u201d to launch apps. Targets can be app names or full paths.",
+      "phraseLabel": "Spoken phrase",
+      "phrasePlaceholder": "calendar",
+      "targetLabel": "App name or path",
+      "targetPlaceholder": "Calendar or /Applications/Calendar.app",
+      "empty": "No open commands yet."
+    },
+    "errors": {
+      "load": "Failed to load commands",
+      "save": "Failed to save commands"
+    },
+    "takeNote": {
+      "title": "Take note",
+      "description": "Say a quick phrase to open Notes and keep dictating into a new note.",
+      "examplesLabel": "Examples",
+      "example1": "Take note",
+      "example2": "Take note project kickoff ideas",
+      "example3": "Take a note meeting follow-ups"
+    },
+    "snippets": {
+      "title": "Snips",
+      "description": "Reusable expansions you can trigger by voice or typing.",
+      "empty": "No snips yet.",
+      "untitled": "Untitled snippet",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "idLabel": "Snippet ID",
+      "idPlaceholder": "support_intro",
+      "triggersLabel": "Triggers (comma separated)",
+      "triggersPlaceholder": "support intro, help me",
+      "templateLabel": "Template",
+      "templatePlaceholder": "Thanks for reaching out...",
+      "variablesLabel": "Variables: {{variables}}",
+      "helper": "Short trigger phrases that expand into the template.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "addTrigger": "Add trigger",
+      "removeTrigger": "Remove trigger",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "What this snippet does",
+      "searchPlaceholder": "Search snips",
+      "addTitle": "Add snippet",
+      "addSubtitle": "Define triggers and the text that should expand.",
+      "create": "Create snippet"
+    }
+  }
+}

@@ -1,0 +1,745 @@
+{
+  "tray": {
+    "settings": "\u8bbe\u7f6e...",
+    "checkUpdates": "\u68c0\u67e5\u66f4\u65b0...",
+    "startMeetingRecording": "\u5f00\u59cb\u4f1a\u8bae\u5f55\u97f3",
+    "stopMeetingRecording": "\u505c\u6b62\u4f1a\u8bae\u5f55\u97f3",
+    "createTask": "Create task",
+    "quit": "\u9000\u51fa",
+    "cancel": "\u53d6\u6d88"
+  },
+  "sidebar": {
+    "general": "\u901a\u7528",
+    "advanced": "\u9ad8\u7ea7",
+    "postProcessing": "\u540e\u5904\u7406",
+    "history": "\u5386\u53f2\u8bb0\u5f55",
+    "debug": "\u8c03\u8bd5",
+    "about": "\u5173\u4e8e"
+  },
+  "onboarding": {
+    "subtitle": "BreezeType is getting ready.",
+    "recommended": "\u63a8\u8350",
+    "download": "\u4e0b\u8f7d",
+    "downloading": "\u4e0b\u8f7d\u4e2d...",
+    "modelCard": {
+      "accuracy": "\u51c6\u786e\u5ea6",
+      "speed": "\u901f\u5ea6"
+    },
+    "models": {
+      "small": {
+        "name": "BreezeType setup",
+        "description": "\u5feb\u901f\u4e14\u76f8\u5f53\u51c6\u786e\u3002"
+      },
+      "medium": {
+        "name": "BreezeType setup",
+        "description": "\u51c6\u786e\u5ea6\u9ad8\uff0c\u901f\u5ea6\u9002\u4e2d"
+      },
+      "turbo": {
+        "name": "BreezeType setup",
+        "description": "\u51c6\u786e\u5ea6\u548c\u901f\u5ea6\u5747\u8861\u3002"
+      },
+      "large": {
+        "name": "BreezeType setup",
+        "description": "\u51c6\u786e\u5ea6\u9ad8\uff0c\u4f46\u901f\u5ea6\u8f83\u6162\u3002"
+      },
+      "parakeet-tdt-0.6b-v3": {
+        "name": "BreezeType setup",
+        "description": "\u5feb\u901f\u4e14\u51c6\u786e"
+      }
+    },
+    "errors": {
+      "loadModels": "BreezeType couldn't finish getting ready. Please try again.",
+      "downloadModel": "BreezeType couldn't finish setup. Please check your connection and try again."
+    }
+  },
+  "modelSelector": {
+    "welcome": "\u6b22\u8fce\u4f7f\u7528 BreezeType\uff01",
+    "downloadPrompt": "BreezeType needs a quick one-time setup before dictation is ready.",
+    "availableModels": "Ready",
+    "downloadModels": "Set Up BreezeType",
+    "chooseModel": "Set Up BreezeType",
+    "active": "\u6d3b\u8dc3",
+    "download": "\u4e0b\u8f7d",
+    "downloadSize": "Required download",
+    "noModelsAvailable": "BreezeType setup is not available right now.",
+    "readyOptionTitle": "Ready",
+    "readyOptionDescription": "BreezeType is ready for local dictation.",
+    "setupOptionTitle": "BreezeType setup",
+    "setupOptionDescription": "Required for fast local dictation.",
+    "deleteError": "BreezeType could not remove that download. Please try again.",
+    "extracting": "Finishing setup...",
+    "extractingMultiple": "Finishing setup...",
+    "extractingGeneric": "Finishing setup...",
+    "downloading": "\u4e0b\u8f7d\u4e2d {{percentage}}%",
+    "downloadingMultiple": "Downloading...",
+    "modelReady": "Ready",
+    "loading": "Getting ready...",
+    "loadingGeneric": "Getting ready...",
+    "modelError": "BreezeType needs attention. Please try again.",
+    "modelUnloaded": "Ready",
+    "noModelDownloadRequired": "Setup required",
+    "deleteModel": "Remove offline data",
+    "statusReady": "\u5c31\u7eea",
+    "statusLoading": "Getting ready",
+    "statusIssue": "Needs attention"
+  },
+  "settings": {
+    "general": {
+      "title": "\u901a\u7528",
+      "shortcut": {
+        "title": "BreezeType \u5feb\u6377\u952e",
+        "description": "\u914d\u7f6e\u542f\u52a8\u8bed\u97f3\u8f6c\u6587\u5b57\u5f55\u5236\u7684\u952e\u76d8\u5feb\u6377\u952e",
+        "loading": "\u52a0\u8f7d\u5feb\u6377\u952e\u4e2d...",
+        "none": "\u672a\u914d\u7f6e\u5feb\u6377\u952e",
+        "notFound": "\u672a\u627e\u5230\u5feb\u6377\u952e",
+        "pressKeys": "\u8bf7\u6309\u952e...",
+        "bindings": {
+          "transcribe": {
+            "name": "\u8f6c\u5f55",
+            "description": "\u5c06\u8bed\u97f3\u8f6c\u6362\u4e3a\u6587\u5b57\u3002"
+          },
+          "cancel": {
+            "name": "\u53d6\u6d88",
+            "description": "\u53d6\u6d88\u5f53\u524d\u5f55\u5236\u3002"
+          },
+          "clipboard_history": {
+            "name": "Clipboard history",
+            "description": "Opens the clipboard history picker."
+          }
+        },
+        "errors": {
+          "restore": "\u65e0\u6cd5\u6062\u590d\u539f\u59cb\u5feb\u6377\u952e",
+          "set": "\u65e0\u6cd5\u8bbe\u7f6e\u5feb\u6377\u952e: {{error}}",
+          "reset": "\u65e0\u6cd5\u5c06\u5feb\u6377\u952e\u91cd\u7f6e\u4e3a\u539f\u59cb\u503c"
+        }
+      },
+      "language": {
+        "title": "\u8bed\u8a00",
+        "description": "\u9009\u62e9\u8bed\u97f3\u8bc6\u522b\u7684\u8bed\u8a00\u3002\u81ea\u52a8\u5c06\u81ea\u52a8\u786e\u5b9a\u8bed\u8a00\uff0c\u9009\u62e9\u7279\u5b9a\u8bed\u8a00\u53ef\u4ee5\u63d0\u9ad8\u8be5\u8bed\u8a00\u7684\u51c6\u786e\u5ea6\u3002",
+        "descriptionUnsupported": "BreezeType automatically detects the language. No manual selection is needed.",
+        "searchPlaceholder": "\u641c\u7d22\u8bed\u8a00...",
+        "noResults": "\u672a\u627e\u5230\u8bed\u8a00",
+        "auto": "\u81ea\u52a8"
+      },
+      "pushToTalk": {
+        "label": "\u6309\u4f4f\u8bf4\u8bdd",
+        "description": "\u6309\u4f4f\u5f55\u5236\uff0c\u677e\u5f00\u505c\u6b62"
+      },
+      "theme": {
+        "title": "Theme",
+        "description": "Choose light or dark mode, or follow the system setting.",
+        "options": {
+          "system": "System (Default)",
+          "light": "Light",
+          "dark": "Dark"
+        }
+      }
+    },
+    "sound": {
+      "title": "\u58f0\u97f3",
+      "microphone": {
+        "title": "\u9ea6\u514b\u98ce",
+        "description": "\u9009\u62e9\u60a8\u504f\u597d\u7684\u9ea6\u514b\u98ce\u8bbe\u5907",
+        "placeholder": "\u9009\u62e9\u9ea6\u514b\u98ce...",
+        "loading": "\u52a0\u8f7d\u4e2d..."
+      },
+      "audioFeedback": {
+        "label": "\u97f3\u9891\u53cd\u9988",
+        "description": "\u5f55\u5236\u5f00\u59cb\u548c\u505c\u6b62\u65f6\u64ad\u653e\u58f0\u97f3"
+      },
+      "outputDevice": {
+        "title": "\u8f93\u51fa\u8bbe\u5907",
+        "description": "\u9009\u62e9\u7528\u4e8e\u53cd\u9988\u58f0\u97f3\u7684\u97f3\u9891\u8f93\u51fa\u8bbe\u5907",
+        "placeholder": "\u9009\u62e9\u8f93\u51fa\u8bbe\u5907...",
+        "loading": "\u52a0\u8f7d\u4e2d..."
+      },
+      "volume": {
+        "title": "\u97f3\u91cf",
+        "description": "\u8c03\u6574\u97f3\u9891\u53cd\u9988\u7684\u97f3\u91cf"
+      }
+    },
+    "advanced": {
+      "title": "\u9ad8\u7ea7",
+      "startHidden": {
+        "label": "\u9690\u85cf\u542f\u52a8",
+        "description": "\u542f\u52a8\u5230\u7cfb\u7edf\u6258\u76d8\u800c\u4e0d\u6253\u5f00\u7a97\u53e3\u3002"
+      },
+      "autostart": {
+        "label": "\u5f00\u673a\u542f\u52a8",
+        "description": "\u767b\u5f55\u8ba1\u7b97\u673a\u65f6\u81ea\u52a8\u542f\u52a8 BreezeType\u3002"
+      },
+      "overlay": {
+        "title": "\u60ac\u6d6e\u7a97\u4f4d\u7f6e",
+        "description": "\u5728\u5f55\u5236\u548c\u8f6c\u5f55\u671f\u95f4\u663e\u793a\u53ef\u89c6\u53cd\u9988\u60ac\u6d6e\u7a97\u3002\u5728 Linux \u4e0a\u5efa\u8bae\u9009\u62e9\u300c\u65e0\u300d\u3002",
+        "options": {
+          "none": "\u65e0",
+          "bottom": "\u5e95\u90e8",
+          "top": "\u9876\u90e8"
+        }
+      },
+      "meetingDetection": {
+        "label": "Meeting detection",
+        "description": "Show a small prompt when a meeting app or tab becomes active."
+      },
+      "pasteMethod": {
+        "title": "\u7c98\u8d34\u65b9\u5f0f",
+        "description": "\u9009\u62e9\u6587\u5b57\u63d2\u5165\u65b9\u5f0f\u3002\u76f4\u63a5\uff1a\u901a\u8fc7\u7cfb\u7edf\u8f93\u5165\u6a21\u62df\u6253\u5b57\u3002\u65e0\uff1a\u8df3\u8fc7\u7c98\u8d34\uff0c\u4ec5\u66f4\u65b0\u5386\u53f2\u8bb0\u5f55/\u526a\u8d34\u677f\u3002",
+        "options": {
+          "clipboard": "\u526a\u8d34\u677f ({{modifier}}+V)",
+          "clipboardCtrlShiftV": "\u526a\u8d34\u677f (Ctrl+Shift+V)",
+          "clipboardShiftInsert": "\u526a\u8d34\u677f (Shift+Insert)",
+          "direct": "\u76f4\u63a5",
+          "none": "\u65e0"
+        }
+      },
+      "clipboardHandling": {
+        "title": "\u526a\u8d34\u677f\u5904\u7406",
+        "description": "\u4e0d\u4fee\u6539\u526a\u8d34\u677f\u5c06\u5728\u8f6c\u5f55\u540e\u4fdd\u7559\u5f53\u524d\u526a\u8d34\u677f\u5185\u5bb9\u3002\u590d\u5236\u5230\u526a\u8d34\u677f\u5c06\u5728\u7c98\u8d34\u540e\u5c06\u8f6c\u5f55\u7ed3\u679c\u7559\u5728\u526a\u8d34\u677f\u4e2d\u3002",
+        "options": {
+          "dontModify": "\u4e0d\u4fee\u6539\u526a\u8d34\u677f",
+          "copyToClipboard": "\u590d\u5236\u5230\u526a\u8d34\u677f"
+        }
+      },
+      "translateToEnglish": {
+        "label": "\u7ffb\u8bd1\u4e3a\u82f1\u8bed",
+        "description": "\u5728\u8f6c\u5f55\u8fc7\u7a0b\u4e2d\u81ea\u52a8\u5c06\u5176\u4ed6\u8bed\u8a00\u7684\u8bed\u97f3\u7ffb\u8bd1\u4e3a\u82f1\u8bed\u3002",
+        "descriptionUnsupported": "Translation is not available with the current speech setup."
+      },
+      "modelUnload": {
+        "title": "Release Speech Resources",
+        "description": "Automatically free local speech resources after BreezeType has been idle for the specified time.",
+        "options": {
+          "never": "\u4ece\u4e0d",
+          "immediately": "\u7acb\u5373",
+          "min2": "2 \u5206\u949f\u540e",
+          "min5": "5 \u5206\u949f\u540e",
+          "min10": "10 \u5206\u949f\u540e",
+          "min15": "15 \u5206\u949f\u540e",
+          "hour1": "1 \u5c0f\u65f6\u540e",
+          "sec5": "5 \u79d2\u540e\uff08\u8c03\u8bd5\uff09"
+        }
+      },
+      "customWords": {
+        "title": "\u81ea\u5b9a\u4e49\u8bcd\u6c47",
+        "description": "\u6dfb\u52a0\u7ecf\u5e38\u88ab\u8bef\u542c\u6216\u62fc\u5199\u9519\u8bef\u7684\u8bcd\u6c47\u3002\u7cfb\u7edf\u5c06\u81ea\u52a8\u5c06\u53d1\u97f3\u76f8\u4f3c\u7684\u8bcd\u6c47\u4fee\u6b63\u4e3a\u60a8\u5217\u8868\u4e2d\u7684\u8bcd\u6c47\u3002",
+        "placeholder": "\u6dfb\u52a0\u8bcd\u6c47",
+        "add": "\u6dfb\u52a0",
+        "remove": "\u5220\u9664 {{word}}"
+      }
+    },
+    "postProcessing": {
+      "title": "\u540e\u5904\u7406",
+      "disabledNotice": "\u540e\u5904\u7406\u5f53\u524d\u5df2\u7981\u7528\u3002\u8bf7\u5728\u8c03\u8bd5\u8bbe\u7f6e\u4e2d\u542f\u7528\u4ee5\u8fdb\u884c\u914d\u7f6e\u3002",
+      "api": {
+        "title": "Cleanup connection",
+        "provider": {
+          "title": "\u63d0\u4f9b\u5546",
+          "description": "Choose how BreezeType should run transcript cleanup."
+        },
+        "appleIntelligence": {
+          "title": "Apple Intelligence",
+          "description": "\u5b8c\u5168\u5728\u8bbe\u5907\u4e0a\u8fd0\u884c\u3002\u65e0\u9700 API \u5bc6\u94a5\u6216\u7f51\u7edc\u8bbf\u95ee\u3002",
+          "requirements": "\u9700\u8981\u8fd0\u884c macOS Tahoe\uff0826.0\uff09\u6216\u66f4\u9ad8\u7248\u672c\u7684 Apple Silicon Mac\u3002\u5fc5\u987b\u5728\u7cfb\u7edf\u8bbe\u7f6e\u4e2d\u542f\u7528 Apple Intelligence\u3002"
+        },
+        "baseUrl": {
+          "title": "Custom connection",
+          "description": "Connection address for custom cleanup setups.",
+          "placeholder": "Connection address"
+        },
+        "apiKey": {
+          "title": "Connection key",
+          "description": "Private key for the selected cleanup connection.",
+          "placeholder": "Paste key"
+        },
+        "model": {
+          "title": "Cleanup option",
+          "descriptionApple": "\u63d0\u4f9b\u53ef\u9009\u7684\u6570\u5b57\u4ee4\u724c\u9650\u5236\u6216\u4fdd\u6301\u9ed8\u8ba4\u7684\u8bbe\u5907\u9884\u8bbe\u3002",
+          "descriptionCustom": "Provide the cleanup option expected by your custom endpoint.",
+          "descriptionDefault": "Choose a cleanup option exposed by the selected connection.",
+          "placeholderApple": "Apple Intelligence",
+          "placeholderWithOptions": "Search or select an option",
+          "placeholderNoOptions": "Type an option name",
+          "refreshModels": "Refresh options"
+        }
+      },
+      "prompts": {
+        "title": "\u63d0\u793a\u8bcd",
+        "selectedPrompt": {
+          "title": "\u5df2\u9009\u63d0\u793a\u8bcd",
+          "description": "\u9009\u62e9\u7528\u4e8e\u4f18\u5316\u8f6c\u5f55\u7684\u6a21\u677f\u6216\u521b\u5efa\u65b0\u6a21\u677f\u3002\u5728\u63d0\u793a\u8bcd\u6587\u672c\u4e2d\u4f7f\u7528 ${output} \u6765\u5f15\u7528\u6355\u83b7\u7684\u8f6c\u5f55\u3002"
+        },
+        "noPrompts": "\u6ca1\u6709\u53ef\u7528\u7684\u63d0\u793a\u8bcd",
+        "selectPrompt": "\u9009\u62e9\u63d0\u793a\u8bcd",
+        "createNew": "\u521b\u5efa\u65b0\u63d0\u793a\u8bcd",
+        "promptLabel": "\u63d0\u793a\u8bcd\u540d\u79f0",
+        "promptLabelPlaceholder": "\u8f93\u5165\u63d0\u793a\u8bcd\u540d\u79f0",
+        "promptInstructions": "\u63d0\u793a\u8bcd\u6307\u4ee4",
+        "promptInstructionsPlaceholder": "\u7f16\u5199\u8f6c\u5f55\u540e\u8981\u6267\u884c\u7684\u6307\u4ee4\u3002\u793a\u4f8b\uff1a\u6539\u8fdb\u4ee5\u4e0b\u6587\u672c\u7684\u8bed\u6cd5\u548c\u6e05\u6670\u5ea6: ${output}",
+        "promptTip": "\u63d0\u793a\uff1a\u4f7f\u7528 <code>${output}</code> \u5c06\u8f6c\u5f55\u6587\u672c\u63d2\u5165\u5230\u60a8\u7684\u63d0\u793a\u8bcd\u4e2d\u3002",
+        "updatePrompt": "\u66f4\u65b0\u63d0\u793a\u8bcd",
+        "deletePrompt": "\u5220\u9664\u63d0\u793a\u8bcd",
+        "createPrompt": "\u521b\u5efa\u63d0\u793a\u8bcd",
+        "cancel": "\u53d6\u6d88",
+        "selectToEdit": "\u9009\u62e9\u4e0a\u65b9\u7684\u63d0\u793a\u8bcd\u4ee5\u67e5\u770b\u548c\u7f16\u8f91\u5176\u8be6\u7ec6\u4fe1\u606f\u3002",
+        "createFirst": "\u70b9\u51fb\u4e0a\u65b9\u7684\u300c\u521b\u5efa\u65b0\u63d0\u793a\u8bcd\u300d\u6765\u521b\u5efa\u60a8\u7684\u7b2c\u4e00\u4e2a\u540e\u5904\u7406\u63d0\u793a\u8bcd\u3002"
+      }
+    },
+    "history": {
+      "title": "\u5386\u53f2\u8bb0\u5f55",
+      "openFolder": "\u6253\u5f00\u5f55\u97f3\u6587\u4ef6\u5939",
+      "loading": "\u52a0\u8f7d\u5386\u53f2\u8bb0\u5f55\u4e2d...",
+      "empty": "\u8fd8\u6ca1\u6709\u8f6c\u5f55\u8bb0\u5f55\u3002\u5f00\u59cb\u5f55\u5236\u4ee5\u5efa\u7acb\u60a8\u7684\u5386\u53f2\u8bb0\u5f55\uff01",
+      "copyToClipboard": "\u590d\u5236\u8f6c\u5f55\u5230\u526a\u8d34\u677f",
+      "save": "\u4fdd\u5b58\u8f6c\u5f55",
+      "unsave": "\u4ece\u5df2\u4fdd\u5b58\u4e2d\u79fb\u9664",
+      "delete": "\u5220\u9664\u6761\u76ee",
+      "deleteError": "\u5220\u9664\u6761\u76ee\u5931\u8d25\uff0c\u8bf7\u91cd\u8bd5\u3002"
+    },
+    "debug": {
+      "title": "\u8c03\u8bd5",
+      "logDirectory": {
+        "title": "\u65e5\u5fd7\u76ee\u5f55",
+        "description": "\u65e5\u5fd7\u6587\u4ef6\u7684\u5b58\u50a8\u4f4d\u7f6e"
+      },
+      "logLevel": {
+        "title": "\u65e5\u5fd7\u7ea7\u522b",
+        "description": "\u8bbe\u7f6e\u65e5\u5fd7\u7684\u8be6\u7ec6\u7a0b\u5ea6"
+      },
+      "updateChecks": {
+        "label": "\u68c0\u67e5\u66f4\u65b0",
+        "description": "\u81ea\u52a8\u68c0\u67e5 BreezeType \u7684\u65b0\u7248\u672c"
+      },
+      "soundTheme": {
+        "label": "\u58f0\u97f3\u4e3b\u9898",
+        "description": "\u9009\u62e9\u5f55\u5236\u5f00\u59cb\u548c\u505c\u6b62\u53cd\u9988\u7684\u58f0\u97f3\u4e3b\u9898"
+      },
+      "wordCorrectionThreshold": {
+        "title": "\u8bcd\u6c47\u4fee\u6b63\u9608\u503c",
+        "description": "\u81ea\u5b9a\u4e49\u8bcd\u6c47\u4fee\u6b63\u7684\u7075\u654f\u5ea6"
+      },
+      "historyLimit": {
+        "title": "\u5386\u53f2\u8bb0\u5f55\u4e0a\u9650",
+        "description": "\u4fdd\u7559\u7684\u6700\u5927\u5386\u53f2\u6761\u76ee\u6570",
+        "entries": "\u6761"
+      },
+      "recordingRetention": {
+        "title": "\u81ea\u52a8\u5220\u9664\u5f55\u97f3",
+        "description": "\u81ea\u52a8\u5220\u9664\u65e7\u5f55\u97f3\u4ee5\u8282\u7701\u7a7a\u95f4",
+        "never": "\u4ece\u4e0d",
+        "preserveLimit": "\u4fdd\u7559\u6700\u65b0 {{count}} \u6761",
+        "days3": "3 \u5929\u540e",
+        "weeks2": "2 \u5468\u540e",
+        "months3": "3 \u4e2a\u6708\u540e",
+        "placeholder": "\u9009\u62e9\u4fdd\u7559\u671f\u9650..."
+      },
+      "alwaysOnMicrophone": {
+        "label": "\u9ea6\u514b\u98ce\u5e38\u5f00",
+        "description": "\u4fdd\u6301\u9ea6\u514b\u98ce\u6d3b\u8dc3\u4ee5\u83b7\u5f97\u66f4\u5feb\u7684\u54cd\u5e94"
+      },
+      "clamshellMicrophone": {
+        "title": "\u5408\u76d6\u9ea6\u514b\u98ce",
+        "description": "\u7b14\u8bb0\u672c\u7535\u8111\u76d6\u5b50\u5173\u95ed\u65f6\u4f7f\u7528\u7684\u9ea6\u514b\u98ce"
+      },
+      "postProcessingToggle": {
+        "label": "\u540e\u5904\u7406",
+        "description": "\u542f\u7528\u8f6c\u5f55\u540e\u7684 AI \u6587\u672c\u4f18\u5316"
+      },
+      "muteWhileRecording": {
+        "label": "\u5f55\u5236\u65f6\u9759\u97f3",
+        "description": "\u5f55\u5236\u671f\u95f4\u9759\u97f3\u7cfb\u7edf\u97f3\u9891"
+      },
+      "appendTrailingSpace": {
+        "label": "\u8ffd\u52a0\u5c3e\u90e8\u7a7a\u683c",
+        "description": "\u5728\u7c98\u8d34\u7684\u8f6c\u5f55\u540e\u6dfb\u52a0\u7a7a\u683c"
+      },
+      "paths": {
+        "appData": "\u5e94\u7528\u6570\u636e:",
+        "models": "Speech data:",
+        "settings": "\u8bbe\u7f6e:"
+      }
+    },
+    "about": {
+      "title": "\u5173\u4e8e",
+      "version": {
+        "title": "\u7248\u672c",
+        "description": "BreezeType \u7684\u5f53\u524d\u7248\u672c"
+      },
+      "appDataDirectory": {
+        "title": "\u5e94\u7528\u6570\u636e\u76ee\u5f55",
+        "description": "BreezeType \u5b58\u50a8\u6570\u636e\u7684\u4f4d\u7f6e"
+      },
+      "sourceCode": {
+        "title": "\u6e90\u4ee3\u7801",
+        "description": "\u67e5\u770b\u6e90\u4ee3\u7801\u5e76\u8d21\u732e",
+        "button": "\u5728 GitHub \u4e0a\u67e5\u770b"
+      },
+      "supportDevelopment": {
+        "title": "\u652f\u6301\u5f00\u53d1",
+        "description": "\u5e2e\u52a9\u6211\u4eec\u7ee7\u7eed\u5f00\u53d1 BreezeType",
+        "button": "\u6350\u8d60"
+      },
+      "acknowledgments": {
+        "title": "\u81f4\u8c22",
+        "whisper": {
+          "title": "Local speech engine",
+          "description": "Choose how BreezeType should run transcript cleanup.",
+          "details": "BreezeType uses local speech processing for fast dictation."
+        }
+      }
+    }
+  },
+  "clipboardOverlay": {
+    "title": "Clipboard history",
+    "searchPlaceholder": "Search clipboard...",
+    "empty": "No clipboard items yet.",
+    "hint": "Enter to paste, Esc to close"
+  },
+  "footer": {
+    "downloadingModel": "Preparing BreezeType...",
+    "checkingUpdates": "\u68c0\u67e5\u66f4\u65b0\u4e2d...",
+    "updateAvailable": "\u6709\u53ef\u7528\u66f4\u65b0: {{version}}",
+    "updateAvailableShort": "\u6709\u53ef\u7528\u66f4\u65b0",
+    "upToDate": "\u5df2\u662f\u6700\u65b0\u7248\u672c",
+    "downloadUpdate": "\u4e0b\u8f7d\u66f4\u65b0",
+    "restart": "\u91cd\u542f",
+    "updateCheckingDisabled": "\u66f4\u65b0\u68c0\u67e5\u5df2\u7981\u7528",
+    "downloading": "\u4e0b\u8f7d\u4e2d... {{progress}}%",
+    "installing": "\u5b89\u88c5\u4e2d...",
+    "preparing": "\u51c6\u5907\u4e2d...",
+    "checkForUpdates": "\u68c0\u67e5\u66f4\u65b0"
+  },
+  "common": {
+    "loading": "\u52a0\u8f7d\u4e2d...",
+    "save": "\u4fdd\u5b58",
+    "cancel": "\u53d6\u6d88",
+    "reset": "\u91cd\u7f6e",
+    "add": "\u6dfb\u52a0",
+    "remove": "\u79fb\u9664",
+    "delete": "\u5220\u9664",
+    "edit": "\u7f16\u8f91",
+    "create": "\u521b\u5efa",
+    "update": "\u66f4\u65b0",
+    "close": "\u5173\u95ed",
+    "open": "\u6253\u5f00",
+    "default": "\u9ed8\u8ba4",
+    "enabled": "\u5df2\u542f\u7528",
+    "disabled": "\u5df2\u7981\u7528",
+    "on": "\u5f00",
+    "off": "\u5173",
+    "yes": "\u662f",
+    "no": "\u5426",
+    "noOptionsFound": "\u672a\u627e\u5230\u9009\u9879",
+    "noResults": "No results",
+    "search": "Search",
+    "searchHistory": "Search history"
+  },
+  "accessibility": {
+    "permissionsRequired": "\u9700\u8981\u8f85\u52a9\u529f\u80fd\u6743\u9650",
+    "permissionsDescription": "BreezeType \u9700\u8981\u8f85\u52a9\u529f\u80fd\u6743\u9650\u624d\u80fd\u8f93\u5165\u8f6c\u5f55\u7684\u6587\u5b57\u3002",
+    "openSettings": "\u6253\u5f00\u7cfb\u7edf\u8bbe\u7f6e",
+    "dismiss": "\u5173\u95ed"
+  },
+  "errors": {
+    "loadDirectory": "\u52a0\u8f7d\u76ee\u5f55\u65f6\u51fa\u9519: {{error}}"
+  },
+  "appLanguage": {
+    "title": "\u5e94\u7528\u8bed\u8a00",
+    "description": "\u66f4\u6539 BreezeType \u754c\u9762\u7684\u8bed\u8a00"
+  },
+  "overlay": {
+    "transcribing": "\u6b63\u5728\u8f6c\u5f55..."
+  },
+  "nav": {
+    "home": "Home",
+    "history": "语音历史",
+    "clipboardHistory": "剪贴板历史",
+    "dictionary": "Dictionary",
+    "snippets": "Snips",
+    "style": "Style",
+    "notes": "Notes",
+    "meetings": "Meetings",
+    "settings": "Settings",
+    "help": "Help"
+  },
+  "meetingsPage": {
+    "title": "Meetings",
+    "subtitle": "Capture mic + system audio for fast, local transcripts.",
+    "status": {
+      "recording": "Recording",
+      "ready": "Ready"
+    },
+    "nameLabel": "Meeting name (optional)",
+    "namePlaceholder": "Product sync, weekly standup\u2026",
+    "nameHint": "Leave blank to auto-name with the lightweight model.",
+    "includeSystemAudio": "Include system audio",
+    "includeSystemAudioHint": "Captures meeting audio from other apps. Turn off to record only your mic.",
+    "startButton": "Start recording",
+    "stopButton": "Stop & save",
+    "stopping": "Stopping...",
+    "recordingStarted": "Meeting recording started",
+    "recordingStopped": "Meeting saved",
+    "startError": "Couldn\u2019t start meeting recording.",
+    "stopError": "Couldn\u2019t finish the meeting recording.",
+    "download": "Download",
+    "downloaded": "Meeting downloaded",
+    "downloadError": "Couldn't download the meeting.",
+    "listTitle": "Recent meetings",
+    "count": "{{count}} total",
+    "loading": "Loading meetings...",
+    "emptyTitle": "No meetings yet",
+    "emptyBody": "Start recording to see your meetings here.",
+    "ended": "Ended {{time}}",
+    "durationLabel": "{{time}}",
+    "play": "Play",
+    "hidePlayer": "Hide player",
+    "audioLoading": "Loading audio...",
+    "audioError": "Couldn\u2019t load the meeting audio.",
+    "searchPlaceholder": "Search meetings",
+    "filter": "Filter",
+    "filterTitle": "Filter by tag",
+    "filterAll": "All tags",
+    "filterEmpty": "No tags set yet.",
+    "tagsLabel": "Tags",
+    "tagsPlaceholder": "Add a tag...",
+    "tagsEmpty": "No tags yet.",
+    "rename": "Rename",
+    "save": "Save",
+    "cancel": "Cancel",
+    "renameEmpty": "Meeting name can\u2019t be empty.",
+    "renameError": "Couldn\u2019t rename the meeting.",
+    "deleteError": "Couldn't delete the meeting.",
+    "refresh": "Refresh",
+    "source": {
+      "system": "System + mic",
+      "mic": "Mic only"
+    },
+    "back": "Back",
+    "notesTitle": "Notes",
+    "notesSubtitle": "Capture quick takeaways during the meeting.",
+    "notesCount": "{{count}} notes",
+    "notesPlaceholder": "Type a note and press Enter",
+    "notesEmpty": "No notes yet.",
+    "notesHint": "Click a transcript line to pin the note timestamp.",
+    "notesLoading": "Loading notes...",
+    "noteError": "Couldn't save the note.",
+    "transcriptTitle": "Transcript",
+    "transcriptCopy": "Copy transcript",
+    "transcriptCopied": "Transcript copied",
+    "transcriptCopyError": "Couldn't copy the transcript.",
+    "transcriptLoading": "Generating transcript...",
+    "transcriptEmpty": "No spoken words detected durring meeting.",
+    "transcriptError": "Couldn't load the transcript."
+  },
+  "meetingPrompt": {
+    "title": "Meeting starting",
+    "subtitle": "Detected in {{source}}",
+    "startButton": "Start recording",
+    "starting": "Starting...",
+    "dismiss": "Not now",
+    "startError": "Couldn't start meeting recording."
+  },
+  "home": {
+    "welcome": "Welcome back",
+    "subtitle": "Here's what your voice looks like today.",
+    "stats": {
+      "words": "words",
+      "wpm": "WPM",
+      "time": "time"
+    },
+    "hero": {
+      "title": "Make BreezeType sound like you",
+      "description": "BreezeType adapts to how you write across apps. Personalize your style for messages, work chats, emails, and more.",
+      "cta": "Start now"
+    },
+    "sections": {
+      "snippets": "Snips",
+      "history": "Daily history"
+    },
+    "snippets": {
+      "empty": "No snips yet."
+    },
+    "history": {
+      "today": "Today",
+      "empty": "No history yet.",
+      "copy": "Copy",
+      "copied": "Copied to clipboard",
+      "filter": "Filter",
+      "filterTitle": "Filter by app",
+      "filterAll": "All apps",
+      "filterEmpty": "No apps yet"
+    }
+  },
+  "notesPage": {
+    "title": "Notes",
+    "subtitle": "Capture ideas while you dictate.",
+    "newNote": "New note",
+    "empty": "No notes yet.",
+    "emptyBody": "Create a note to start capturing thoughts.",
+    "searchPlaceholder": "Search notes",
+    "titlePlaceholder": "Title",
+    "bodyPlaceholder": "Start talking to add notes...",
+    "untitled": "Untitled note",
+    "saving": "Saving...",
+    "saved": "Saved"
+  },
+  "dictionaryPage": {
+    "title": "Dictionary",
+    "subtitle": "Teach BreezeType the words you use most.",
+    "saving": "Saving...",
+    "entries": {
+      "title": "Dictionary entries",
+      "description": "Add terms and optional definitions to improve word correction.",
+      "empty": "No dictionary entries yet.",
+      "untitled": "Untitled term",
+      "helper": "Add a term and optional definition.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "termLabel": "Term",
+      "termPlaceholder": "Acme CRM",
+      "definitionLabel": "Definition",
+      "definitionPlaceholder": "Internal customer platform",
+      "searchPlaceholder": "Search dictionary",
+      "addTitle": "Add term",
+      "addSubtitle": "Add a term and optional definition.",
+      "create": "Create term"
+    }
+  },
+  "placeholders": {
+    "dictionary": "Your custom terminology and definitions will appear here.",
+    "snippets": "Reusable snips and saved phrases will appear here.",
+    "style": "Tune tone and formatting preferences here.",
+    "notes": "Capture quick notes from your dictation history.",
+    "help": "Tips and support resources will live here."
+  },
+  "help": {
+    "title": "Help",
+    "subtitle": "Quick diagnostics for BreezeType.",
+    "status": {
+      "ready": "Ready",
+      "loading": "Loading",
+      "issue": "Issue"
+    },
+    "tutorial": {
+      "open": "Tutorial",
+      "title": "Tutorial",
+      "subtitle": "A guided practice for dictation, clipboard history, tasks, and meeting recordings.",
+      "cardTitle": "Tutorial",
+      "cardSubtitle": "Practice dictation, clipboard history, tasks, and meeting recordings.",
+      "skip": "Skip",
+      "previous": "Previous",
+      "next": "Next",
+      "stepStatus": "Step {{current}} of {{total}}",
+      "reminder": "This tutorial is always available in the Help area.",
+      "steps": {
+        "dictation": {
+          "eyebrow": "Dictation",
+          "title": "Speak once",
+          "description": "Use your current shortcut, read one phrase, and watch BreezeType place the text.",
+          "action": "Try dictation"
+        },
+        "clipboard": {
+          "eyebrow": "Clipboard history",
+          "title": "Find and paste",
+          "description": "Copy two snippets, then practice pulling them back with the clipboard manager.",
+          "action": "Try clipboard history"
+        },
+        "tasks": {
+          "eyebrow": "Tasks",
+          "title": "Capture next steps",
+          "description": "Open Quick Task, type a natural-language task, and see how BreezeType reads it.",
+          "action": "Try quick task"
+        },
+        "meetings": {
+          "eyebrow": "Meeting recordings",
+          "title": "Record and review",
+          "description": "Record the call you are already in. BreezeType transcribes locally without adding a bot.",
+          "action": "Start a meeting recording"
+        },
+        "finish": {
+          "eyebrow": "All set",
+          "title": "You are ready",
+          "description": "You have the core BreezeType loop: speak, reuse clips, capture tasks, and record meetings.",
+          "action": "Start using BreezeType"
+        }
+      }
+    },
+    "issue": {
+      "title": "Current issue",
+      "description": "If something is wrong, you\u2019ll see it here.",
+      "none": "No issues detected."
+    },
+    "permissions": {
+      "title": "\u6743\u9650",
+      "subtitle": "\u68c0\u67e5\u6240\u9700\u7684\u7cfb\u7edf\u6743\u9650\u3002",
+      "refresh": "\u5237\u65b0",
+      "notSupported": "\u6743\u9650\u68c0\u67e5\u4ec5\u5728 macOS \u4e0a\u53ef\u7528\u3002",
+      "status": {
+        "on": "\u5df2\u5f00\u542f",
+        "off": "\u5df2\u5173\u95ed",
+        "checking": "\u68c0\u67e5\u4e2d...",
+        "error": "\u4e0d\u53ef\u7528"
+      },
+      "items": {
+        "accessibility": "\u8f85\u52a9\u529f\u80fd",
+        "microphone": "\u9ea6\u514b\u98ce",
+        "screenRecording": "\u5c4f\u5e55\u5f55\u5236",
+        "inputMonitoring": "\u8f93\u5165\u76d1\u63a7"
+      }
+    }
+  },
+  "commandsPage": {
+    "title": "Snips",
+    "subtitle": "Create voice commands that trigger actions.",
+    "saving": "Saving...",
+    "status": {
+      "unsaved": "Unsaved changes"
+    },
+    "open": {
+      "title": "Open",
+      "description": "Say \u201copen <phrase>\u201d to launch apps. Targets can be app names or full paths.",
+      "phraseLabel": "Spoken phrase",
+      "phrasePlaceholder": "calendar",
+      "targetLabel": "App name or path",
+      "targetPlaceholder": "Calendar or /Applications/Calendar.app",
+      "empty": "No open commands yet."
+    },
+    "errors": {
+      "load": "Failed to load commands",
+      "save": "Failed to save commands"
+    },
+    "takeNote": {
+      "title": "Take note",
+      "description": "Say a quick phrase to open Notes and keep dictating into a new note.",
+      "examplesLabel": "Examples",
+      "example1": "Take note",
+      "example2": "Take note project kickoff ideas",
+      "example3": "Take a note meeting follow-ups"
+    },
+    "snippets": {
+      "title": "Snips",
+      "description": "Reusable expansions you can trigger by voice or typing.",
+      "empty": "No snips yet.",
+      "untitled": "Untitled snippet",
+      "enabled": "Enabled",
+      "disabled": "Disabled",
+      "idLabel": "Snippet ID",
+      "idPlaceholder": "support_intro",
+      "triggersLabel": "Triggers (comma separated)",
+      "triggersPlaceholder": "support intro, help me",
+      "templateLabel": "Template",
+      "templatePlaceholder": "Thanks for reaching out...",
+      "variablesLabel": "Variables: {{variables}}",
+      "helper": "Short trigger phrases that expand into the template.",
+      "edit": "Edit",
+      "hide": "Hide",
+      "addTrigger": "Add trigger",
+      "removeTrigger": "Remove trigger",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "What this snippet does",
+      "searchPlaceholder": "Search snips",
+      "addTitle": "Add snippet",
+      "addSubtitle": "Define triggers and the text that should expand.",
+      "create": "Create snippet"
+    }
+  }
+}

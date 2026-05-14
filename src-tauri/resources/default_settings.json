@@ -1,0 +1,12 @@
+{
+  "bindings": {
+    "transcribe": {
+      "id": "transcribe",
+      "name": "Transcribe Keyboard Shortcut",
+      "description": "Converts your speech into text.",
+      "default_binding": "Platform-specific: cmd+shift+x (macOS), shift+tab (Windows/Linux)"
+    }
+  },
+  "push_to_talk": true,
+  "selected_language": "auto"
+}

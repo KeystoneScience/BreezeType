@@ -1,0 +1,27 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "default",
+  "description": "Capabilities for the app",
+  "windows": ["main", "recording_overlay", "clipboard_overlay", "quick_task_overlay"],
+  "permissions": [
+    "core:default",
+    "core:window:default",
+    "core:window:allow-start-dragging",
+    "opener:default",
+    "store:default",
+    "updater:default",
+    "process:default",
+    "notification:default",
+    "dialog:default",
+    "auth-session:default",
+    "global-shortcut:allow-is-registered",
+    "global-shortcut:allow-register",
+    "global-shortcut:allow-unregister",
+    "global-shortcut:allow-unregister-all",
+    "clipboard-manager:allow-read-text",
+    "clipboard-manager:allow-write-text",
+    "macos-permissions:default",
+    "fs:read-files",
+    "fs:allow-resource-read-recursive"
+  ]
+}

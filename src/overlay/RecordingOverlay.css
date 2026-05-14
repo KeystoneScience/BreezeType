@@ -1,0 +1,114 @@
+.overlay-shell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.recording-overlay {
+  position: relative;
+  height: 34px;
+  width: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: #000000cc;
+  border-radius: 999px;
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.recording-overlay.is-transcribing,
+.recording-overlay.is-clipboard {
+  width: 32px;
+  padding: 0;
+}
+
+.recording-overlay.is-stop-clickable {
+  cursor: pointer;
+}
+
+.bars-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.bar {
+  width: 5px;
+  background: #ffffff;
+  max-height: 18px;
+  border-radius: 999px;
+  transition: height 80ms linear;
+  min-height: 3px;
+}
+
+.recording-overlay.fade-in {
+  opacity: 1;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-top-color: #ffffff;
+  animation: spin 0.9s linear infinite;
+}
+
+.clipboard-toast {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  animation: clipboard-pop 900ms ease-out both;
+}
+
+.clipboard-check-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.clipboard-check-body {
+  fill: #ffffff;
+}
+
+.clipboard-check-mark {
+  fill: none;
+  stroke: #0f172a;
+  stroke-width: 2.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@keyframes clipboard-pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.72);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

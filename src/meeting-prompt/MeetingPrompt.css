@@ -1,0 +1,105 @@
+.meeting-prompt-shell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meeting-prompt {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: rgba(18, 18, 20, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 180ms ease-out, transform 180ms ease-out;
+  color: #f8fafc;
+  font-family: "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+}
+
+.meeting-prompt.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.meeting-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meeting-title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.meeting-subtitle {
+  font-size: 12px;
+  color: rgba(248, 250, 252, 0.72);
+}
+
+.meeting-action {
+  grid-row: 1 / span 2;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-size: 12px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 120ms ease-out, box-shadow 120ms ease-out;
+}
+
+.meeting-action:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.meeting-action:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
+  box-shadow: none;
+}
+
+.meeting-dismiss {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: transparent;
+  color: rgba(248, 250, 252, 0.72);
+  font-size: 14px;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+}
+
+.meeting-dismiss:hover {
+  color: #f8fafc;
+}
+
+.meeting-dismiss-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.meeting-error {
+  grid-column: 1 / -1;
+  font-size: 11px;
+  color: #fecaca;
+}
