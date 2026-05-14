@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/breeze_mark_square.svg" alt="BreezeType logo" width="112" />
+  <img src=".github/assets/breezetype-readme-header.png" alt="BreezeType cloud header" width="100%" />
 </p>
 
 <h1 align="center">BreezeType</h1>
@@ -33,6 +33,10 @@ BreezeType is a cross-platform Tauri desktop app for voice-driven work.
 It starts as a fast dictation tool and extends into a workspace with history, meetings, tasks, dictionary corrections, and a hidden local MCP surface for model access to that context. Transcription is local-first and powered by Parakeet models running on-device.
 
 This repository is the desktop app. BreezeType account, sync, sharing, billing, and team features intentionally call BreezeType's managed hosted API when a signed-in user enables those flows. The local dictation, meeting capture, history, tasks, dictionary, and MCP surfaces remain local-first.
+
+<p align="center">
+  <img src=".github/assets/breeze-dashboard.webp" alt="BreezeType desktop dashboard with voice history, clipboard history, tasks, meetings, settings, and help" width="100%" />
+</p>
 
 ## Install
 
