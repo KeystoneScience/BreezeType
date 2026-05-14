@@ -6,6 +6,7 @@
 <p align="center"><strong>Local-first desktop dictation with a full voice workspace.</strong></p>
 
 <p align="center">
+  <a href="https://breezetype.com/"><img alt="Website" src="https://img.shields.io/badge/Website-breezetype.com-0F6FFF" /></a>
   <a href="https://discord.gg/Rfuvm7Pd2G"><img alt="Discord" src="https://img.shields.io/badge/Discord-Join%20BreezeType-5865F2?logo=discord&logoColor=white" /></a>
   <a href="https://x.com/sciguy"><img alt="X @sciguy" src="https://img.shields.io/badge/X-@sciguy-000000?logo=x&logoColor=white" /></a>
   <a href="https://youtube.com/keystonescience"><img alt="YouTube KeystoneScience" src="https://img.shields.io/badge/YouTube-KeystoneScience-FF0000?logo=youtube&logoColor=white" /></a>
